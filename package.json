@@ -1,0 +1,39 @@
+{
+  "name": "@esri/calcite-base",
+  "version": "1.0.0",
+  "description": "Tokens, mixins, and other Sass utilities for Esri's Calcite Design System",
+  "private": false,
+  "homepage": "https://github.com/Esri/calcite-base",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Esri/calcite-colors.git"
+  },
+  "author": {
+    "name": "Esri"
+  },
+  "contributors": [
+    {
+      "name": "Julio Ochoa",
+      "email": "<jochoa@esri.com>"
+    },
+    {
+      "name": "Adam Tirella",
+      "email": "<atirella@esri.com>"
+    },
+    {
+      "name": "Paul Pederson",
+      "email": "<ppederson@esri.com>"
+    }
+  ],
+  "license": "SEE LICENSE IN README.md",
+  "bugs": {
+    "url": "https://github.com/esri/calcite-base/issues"
+  },
+  "devDependencies": {
+    "gh-release": "~1.1.3"
+  },
+  "scripts": {
+    "release": "gh-release"
+  }
+}
