@@ -22,7 +22,7 @@ You can also [download the latest release manually](https://github.com/Esri/calc
 In a Sass project, simply import calcite-base into your project and use the variables/mixins:
 
 ```scss
-@import "./node_modules/@esri/calcite-base/_index.scss";
+@import "./node_modules/@esri/calcite-base/dist/_index.scss";
 
 .myClass {
   color: $blue;
@@ -35,13 +35,13 @@ If you want to override any of the variables locally, make sure you put your dec
 ```scss
 $blue: #0196ff; // local override for blue
 
-@import "./node_modules/@esri/calcite-base/_base.scss";
+@import "./node_modules/@esri/calcite-base/dist/_index.scss";
 ```
 
 If you only require certain modules, and don't want to litter your Sass scope with all the variables and mixins, you can import each section directly as well:
 
 ```scss
-@import "./node_modules/@esri/calcite-base/sass/_type.scss";
+@import "./node_modules/@esri/calcite-base/dist/_type.scss";
 
 .myClass {
   @include avenir-light();
@@ -57,7 +57,7 @@ If you only require certain modules, and don't want to litter your Sass scope wi
 If you are using PostCSS (or standard CSS) there are a series of files which declare the variables utilizing [custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) (CSS Variables). You can use these along with something like the [postcss-custom-properties](https://github.com/postcss/postcss-custom-properties) library to utilize the base colors, styles, etc in your postcss project:
 
 ```css
-@import './node_modules/@esri/calcite-base/post-css/base.css';
+@import './node_modules/@esri/calcite-base/dist/index.css';
 
 .myClass {
   color: var(--blue);
