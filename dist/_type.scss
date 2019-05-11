@@ -1,0 +1,182 @@
+$baseline-ratio:     1.5                    !default;
+$baseline:           $baseline-ratio * 1rem !default;
+
+// Scale
+$golden-ratio:       1.618;
+
+// Structural
+$ratio:              1.414;
+$medium-ratio:       1.33;
+$small-ratio:        1.25;
+$body-size:          1rem;
+$small-size:         0.85rem;
+$indent:             1em;
+
+// Header Family
+$avenir-tracking:    0;
+$avenir-family:      'Avenir Next W01', 'Avenir Next W00', 'Avenir Next', 'Avenir', 'Helvetica Neue', sans-serif;
+
+// Code Family
+$code-tracking:      0;
+$code-family:        'Consolas', 'Andale Mono', 'Lucida Console', 'Monaco', monospace;
+
+@mixin avenir-light() {
+  font-weight: 300; font-style: normal;
+}
+
+@mixin avenir-light-italic() {
+  font-weight: 300; font-style: italic;
+}
+
+@mixin avenir-regular() {
+  font-weight: 400; font-style: normal;
+}
+
+@mixin avenir-italic() {
+  font-weight: 400; font-style: italic;
+}
+
+@mixin avenir-demi() {
+  font-weight: 700; font-style: normal;
+}
+
+@mixin avenir-demi-italic() {
+  font-weight: 700; font-style: italic;
+}
+
+@mixin avenir-bold() {
+  font-weight: 700; font-style: normal;
+}
+
+@mixin avenir-bold-italic() {
+  font-weight: 700; font-style: italic;
+}
+
+@mixin code-face() {
+  @include tracking($code-tracking);
+  font-family: $code-family; font-weight: 400; font-style: normal;
+  b, strong {font-weight: 400;}
+}
+
+@mixin code-italic() {
+  @include tracking($code-tracking);
+  font-family: $code-family; font-weight: 400; font-style: italic;
+  b, strong {font-weight: 400;}
+}
+
+@mixin tracking($n) {
+  letter-spacing: $n * 0.001em;
+}
+
+@mixin leading($n) {
+  line-height: $n * $baseline;
+}
+
+@mixin word-spacing($n) {
+  word-spacing: $n * 0.001em;
+}
+
+@mixin text-inline() {
+  display: inline;
+}
+
+@mixin text-center() {
+  text-align: center;
+}
+
+@mixin text-left() {
+  text-align: left;
+  @include rtl {
+    text-align: right;
+  }
+}
+
+@mixin text-right() {
+  text-align: right;
+  @include rtl {
+    text-align: left;
+  }
+}
+
+@mixin text-light() {
+  opacity: 0.66;
+}
+
+@mixin text-ellipsis() {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin text-color($value) {
+  color: $value;
+}
+
+@mixin link-color($value, $light-value) {
+  color: $value;
+  &:hover {
+    color: $light-value;
+  }
+}
+
+@function modular-scale($increment, $targetRatio) {
+  $v1: $body-size;
+  $v2: $small-size;
+  $value: $v1;
+
+  @while $v2 > $v1 {
+    $v2: ($v2 / $targetRatio); // will be off-by-1
+  }
+  @while $v2 < $v1 {
+    $v2: ($v2 * $targetRatio); // will fix off-by-1
+  }
+
+  $double-stranded: $v2 > $v1;
+
+  @if $increment > 0 {
+    @for $i from 1 through $increment {
+      @if $double-stranded and ($v1 * $targetRatio) > $v2 {
+        $value: $v2;
+        $v2: ($v2 * $targetRatio);
+      } @else {
+        $v1: ($v1 * $targetRatio);
+        $value: $v1;
+      }
+    }
+  }
+
+  @if $increment < 0 {
+    $unit: $body-size/16;
+    $decriment: $increment * $unit;
+    $value: $body-size + $decriment;
+  }
+
+  @return $value;
+}
+
+@mixin font-size($n) {
+  font-size: modular-scale($n);
+  @if $n > 7 {
+    line-height: $baseline-ratio*.85;
+  }
+  @else if $n <= 7 and $n > 5 {
+   line-height: $baseline-ratio*.875;
+  }
+  @else if $n <= 5 and $n > 3 {
+    line-height: $baseline-ratio*.9;
+  }
+  @else if $n <= 3 and $n > 2 {
+    line-height: $baseline-ratio*.925;
+  }
+  @else if $n <= 2 {
+    line-height: $baseline-ratio;
+  }
+  @if $n > 0 {
+    @media screen and (max-width: $medium - 1) {
+      font-size: modular-scale($n, $medium-ratio);
+    }
+    @media screen and (max-width: $small - 1) {
+      font-size: modular-scale($n, $small-ratio);
+    }
+  }
+}

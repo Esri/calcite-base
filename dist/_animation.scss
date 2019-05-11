@@ -1,0 +1,127 @@
+$transition:               150ms linear                !default;
+$box-shadow:               0 0 16px 0 rgba(0,0,0,.05)  !default;
+$easing-function:          cubic-bezier(0.215, 0.440, 0.420, 0.880) !default;
+
+@mixin animation ($animations...) {
+  @include prefixer(animation, $animations, webkit moz spec);
+}
+
+@mixin animation-name ($names...) {
+  @include prefixer(animation-name, $names, webkit moz spec);
+}
+
+@mixin animation-duration ($times...) {
+  @include prefixer(animation-duration, $times, webkit moz spec);
+}
+
+@mixin animation-timing-function ($motions...) {
+  @include prefixer(animation-timing-function, $motions, webkit moz spec);
+}
+
+@mixin animation-iteration-count ($values...) {
+  @include prefixer(animation-iteration-count, $values, webkit moz spec);
+}
+
+@mixin animation-direction ($directions...) {
+  @include prefixer(animation-direction, $directions, webkit moz spec);
+}
+
+@mixin animation-play-state ($states...) {
+  @include prefixer(animation-play-state, $states, webkit moz spec);
+}
+
+@mixin animation-delay ($times...) {
+  @include prefixer(animation-delay, $times, webkit moz spec);
+}
+
+@mixin animation-fill-mode ($modes...) {
+  @include prefixer(animation-fill-mode, $modes, webkit moz spec);
+}
+
+@mixin keyframes ($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+@mixin fade-in () {
+  opacity: 0;
+  @include animation(fade-in ease-in 1);
+  @include animation-fill-mode(forwards);
+  @include animation-duration(.75s);
+}
+
+@mixin fade-out () {
+  @include animation(fade-out ease-out 1);
+  @include animation-fill-mode(both);
+  @include animation-duration(.75s);
+}
+
+@mixin in-up () {
+  @include animation(in-up ease-out 1);
+  @include animation-fill-mode(both);
+  @include animation-duration(0.5s);
+}
+
+@mixin in-down () {
+  @include animation(in-down ease-out 1);
+  @include animation-fill-mode(both);
+  @include animation-duration(0.5s);
+}
+
+@mixin out-up () {
+  @include animation(out-up ease-in 1);
+  @include animation-fill-mode(both);
+  @include animation-duration(0.5s);
+}
+
+@mixin out-down () {
+  @include animation(out-down ease-in 1);
+  @include animation-fill-mode(both);
+  @include animation-duration(0.5s);
+}
+
+@mixin fade-in-keyframes () {
+  @include keyframes (fade-in) {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+}
+
+@mixin fade-out-keyframes () {
+  @include keyframes (fade-out) {
+    0%   { opacity: 1; }
+    100% { opacity: 0; }
+  }
+}
+
+@mixin in-up-keyframes () {
+  @include keyframes (in-up) {
+    0%   { transform: translate3d(0, 100%, 0);}
+    100% { transform: translate3d(0, 0, 0); }
+  }
+}
+
+@mixin in-down-keyframes () {
+  @include keyframes (in-down) {
+    0%   { transform: translate3d(0, -100%, 0);}
+    100% { transform: translate3d(0, 0, 0); }
+  }
+}
+
+@mixin out-up-keyframes () {
+  @include keyframes (out-up) {
+    0%   { transform: translate3d(0, 0, 0);}
+    100% { transform: translate3d(0, 100%, 0); }
+  }
+}
+
+@mixin out-down-keyframes () {
+  @include keyframes (out-down) {
+    0%   { transform: translate3d(0, 0, 0);}
+    100% { transform: translate3d(0, -100%, 0); }
+  }
+}
