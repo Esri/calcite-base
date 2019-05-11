@@ -52,24 +52,24 @@ If you only require certain modules, and don't want to litter your Sass scope wi
 }
 ```
 
-### Custom Properties
+### Custom Properties 💡coming soon 💡
 
 If you are using PostCSS (or standard CSS) there are a series of files which declare the variables utilizing [custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) (CSS Variables). You can use these along with something like the [postcss-custom-properties](https://github.com/postcss/postcss-custom-properties) library to utilize the base colors, styles, etc in your postcss project:
 
 ```css
-@import './node_modules/@esri/calcite-base/dist/index.css';
+@import "./node_modules/@esri/calcite-base/dist/index.css";
 
 .myClass {
   color: var(--blue);
 }
 ```
 
-### JavaScript
+### JavaScript 💡coming soon 💡
 
 If you need some of these values and are using a CSS-in-JS approach, you can import them from the JavaScript file:
 
 ```js
-const calciteBase = require('@esri/calcite-base');
+const calciteBase = require("@esri/calcite-base");
 console.log(calciteBase.blue); // "#007ac2"
 ```
 
