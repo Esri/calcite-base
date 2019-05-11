@@ -1,13 +1,13 @@
-@mixin leader-half()  { margin-top:    0.5 * $baseline; }
-@mixin leader-quarter()  { margin-top:    0.25 * $baseline; }
+@mixin leader-half() { margin-top: 0.5 * $baseline; }
+@mixin leader-quarter() { margin-top: 0.25 * $baseline; }
 @mixin trailer-half() { margin-bottom: 0.5 * $baseline; }
 @mixin trailer-quarter() { margin-bottom: 0.25 * $baseline; }
-@mixin padding-leader-half()  { padding-top:    0.5 * $baseline; }
-@mixin padding-leader-quarter()  { padding-top:    0.25 * $baseline; }
+@mixin padding-leader-half() { padding-top: 0.5 * $baseline; }
+@mixin padding-leader-quarter() { padding-top: 0.25 * $baseline; }
 @mixin padding-trailer-half() { padding-bottom: 0.5 * $baseline; }
 @mixin padding-trailer-quarter() { padding-bottom: 0.25 * $baseline; }
 
-@mixin leader($n)          { margin-top:     $n * $baseline; }
-@mixin trailer($n)         { margin-bottom:  $n * $baseline; }
-@mixin padding-leader($n)  { padding-top:    $n * $baseline; }
+@mixin leader($n) { margin-top:  $n * $baseline; }
+@mixin trailer($n) { margin-bottom: $n * $baseline; }
+@mixin padding-leader($n) { padding-top: $n * $baseline; }
 @mixin padding-trailer($n) { padding-bottom: $n * $baseline; }
