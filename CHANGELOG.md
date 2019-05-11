@@ -7,4 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Unreleased
 
 ### Added
-- TODO
+
+Initial commit:
+  - animation
+  - color
+  - responsive
+  - spacing
+  - type
+  - utils
