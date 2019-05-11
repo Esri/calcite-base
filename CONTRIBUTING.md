@@ -1,4 +1,4 @@
-# Contributing to Calcite web
+# Contributing to calcite-base
 
 You want to contribute? Nice! Below are some guidelines for ensuring that your contribution makes sense for everybody.
 
@@ -18,7 +18,7 @@ Pull requests are the greatest contributions, so be sure they are focused in sco
 # Clone your fork of the repo into the current directory
 git clone https://github.com/<your-user>/calcite-base
 # Navigate to the newly cloned directory
-cd calcite-web
+cd calcite-base
 # Assign the original repo to a remote called "upstream"
 git remote add upstream https://github.com/esri/calcite-base
 # Install the tools necessary for development
