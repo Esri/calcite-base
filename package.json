@@ -35,5 +35,8 @@
   },
   "scripts": {
     "release": "gh-release"
+  },
+  "dependencies": {
+    "@esri/calcite-colors": "^1.2.0"
   }
 }
