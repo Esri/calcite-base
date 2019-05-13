@@ -1,9 +1,6 @@
 $baseline-ratio:     1.5                    !default;
 $baseline:           $baseline-ratio * 1rem !default;
 
-// Scale
-$golden-ratio:       1.618;
-
 // Structural
 $ratio:              1.414;
 $medium-ratio:       1.33;
@@ -155,7 +152,7 @@ $code-family:        'Consolas', 'Andale Mono', 'Lucida Console', 'Monaco', mono
 }
 
 @mixin font-size($n) {
-  font-size: modular-scale($n);
+  font-size: modular-scale($n, $ratio);
   @if $n > 7 {
     line-height: $baseline-ratio*.85;
   }
@@ -172,10 +169,10 @@ $code-family:        'Consolas', 'Andale Mono', 'Lucida Console', 'Monaco', mono
     line-height: $baseline-ratio;
   }
   @if $n > 0 {
-    @media screen and (max-width: $medium - 1) {
+    @media screen and (max-width: $viewport-medium - 1) {
       font-size: modular-scale($n, $medium-ratio);
     }
-    @media screen and (max-width: $small - 1) {
+    @media screen and (max-width: $viewport-small - 1) {
       font-size: modular-scale($n, $small-ratio);
     }
   }
