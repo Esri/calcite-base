@@ -1,7 +1,3 @@
-$viewport-small:  480px  !default;
-$viewport-medium: 860px  !default;
-$viewport-large:  1440px !default;
-
 @mixin respond-to($max: null, $min: null, $type: screen) {
   @if $max and $min {
     @media #{$type} and (max-width: $max) and (min-width: $min) {

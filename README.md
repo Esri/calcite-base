@@ -38,7 +38,7 @@ $blue: #0196ff; // local override for blue
 @import "./node_modules/@esri/calcite-base/dist/_index.scss";
 ```
 
-If you only require certain modules, and don't want to litter your Sass scope with all the variables and mixins, you can import each section directly as well:
+If you only require certain mixins, you can import each section directly as well:
 
 ```scss
 @import "./node_modules/@esri/calcite-base/dist/_type.scss";
@@ -52,33 +52,28 @@ If you only require certain modules, and don't want to litter your Sass scope wi
 }
 ```
 
-### Custom Properties 💡coming soon 💡
+### Custom Properties
 
 If you are using PostCSS (or standard CSS) there are a series of files which declare the variables utilizing [custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) (CSS Variables). You can use these along with something like the [postcss-custom-properties](https://github.com/postcss/postcss-custom-properties) library to utilize the base colors, styles, etc in your postcss project:
 
 ```css
-@import "./node_modules/@esri/calcite-base/dist/index.css";
+@import "./node_modules/@esri/calcite-base/dist/variables.css";
 
 .myClass {
   color: var(--blue);
 }
 ```
 
-### JavaScript 💡coming soon 💡
+### JavaScript
 
-If you need some of these values and are using a CSS-in-JS approach, you can import them from the JavaScript file:
-
-```js
-const calciteBase = require("@esri/calcite-base");
-console.log(calciteBase.blue); // "#007ac2"
-```
-
-If you have ES6 modules, you can also grab just what you need:
+If you need some of these values and are using a CSS-in-JS approach, you can import them from the JavaScript file using ES6 modules:
 
 ```js
 import {avenirLight} from "@esri/calcite-base";
 console.log(avenirLight); // '"Avenir Next", "Avenir", "Helvetica Neue", sans-serif'
 ```
+
+Note when using partial imports like this, the hyphenated variables become camel case.
 
 ## Licensing
 

@@ -1,3 +1,5 @@
+@import "./_variables.scss";
+
 @mixin leader-half() { margin-top: 0.5 * $baseline; }
 @mixin leader-quarter() { margin-top: 0.25 * $baseline; }
 @mixin trailer-half() { margin-bottom: 0.5 * $baseline; }

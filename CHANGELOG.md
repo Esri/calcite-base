@@ -8,10 +8,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-Initial commit:
+- Mixins:
   - animation
-  - color
   - responsive
   - spacing
   - type
   - utils
+- Variables in several file formats:
+  - Sass
+  - ES6 Modules
+  - TypeScript definitions
+  - CSS (Custom Properties)
