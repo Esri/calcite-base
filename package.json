@@ -37,9 +37,11 @@
     "camelcase": "^5.3.1",
     "gh-release": "~1.1.3",
     "npm-watch": "^0.6.0",
+    "sassdoc": "^2.7.0",
     "scss-to-json": "^2.0.0"
   },
   "scripts": {
+    "docs": "sassdoc dist/",
     "release": "gh-release",
     "build": "node build.js",
     "start": "npm-watch"

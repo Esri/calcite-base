@@ -1,41 +1,70 @@
+////
+/// Type mixins provide mixins for styling text.
+/// @group Animation
+////
 @import "./_variables.scss";
 
+/// Generate a prefixed version of the animation property
+/// @param {string} $animations... - one or more (comma separated) animations to be prefixed
 @mixin animation ($animations...) {
   @include prefixer(animation, $animations, webkit moz spec);
 }
 
+/// Generate a prefixed version of the animation-name property
+/// @param {string} $names... - one or more (comma separated) names to be prefixed
 @mixin animation-name ($names...) {
   @include prefixer(animation-name, $names, webkit moz spec);
 }
 
+/// Generate a prefixed version of the animation-duration property
+/// @param {string} $times... - one or more (comma separated) times to be prefixed
 @mixin animation-duration ($times...) {
   @include prefixer(animation-duration, $times, webkit moz spec);
 }
 
+/// Generate a prefixed version of the animation-timing-function property
+/// @param {string} $motions... - one or more (comma separated) motions to be prefixed
 @mixin animation-timing-function ($motions...) {
   @include prefixer(animation-timing-function, $motions, webkit moz spec);
 }
 
+/// Generate a prefixed version of the animation-iteration-count property
+/// @param {string} $values... - one or more (comma separated) values to be prefixed
 @mixin animation-iteration-count ($values...) {
   @include prefixer(animation-iteration-count, $values, webkit moz spec);
 }
 
+/// Generate a prefixed version of the animation-direction property
+/// @param {string} $directions... - one or more (comma separated) directions to be prefixed
 @mixin animation-direction ($directions...) {
   @include prefixer(animation-direction, $directions, webkit moz spec);
 }
 
+/// Generate a prefixed version of the animation-play-state property
+/// @param {string} $states... - one or more (comma separated) states to be prefixed
 @mixin animation-play-state ($states...) {
   @include prefixer(animation-play-state, $states, webkit moz spec);
 }
 
+/// Generate a prefixed version of the animation-delay property
+/// @param {string} $times... - one or more (comma separated) times to be prefixed
 @mixin animation-delay ($times...) {
   @include prefixer(animation-delay, $times, webkit moz spec);
 }
 
+/// Generate a prefixed version of the animation-fill-mode property
+/// @param {string} $modes... - one or more (comma separated) modes to be prefixed
 @mixin animation-fill-mode ($modes...) {
   @include prefixer(animation-fill-mode, $modes, webkit moz spec);
 }
 
+/// Generate keyframes with browser prefixes
+/// @param {string} $name - name of resulting keyframes
+/// @example scss - creates keyframes named out-up
+///   @include keyframes(out-up) {
+///     0%   { transform: translate3d(0, 0, 0);}
+///     100% { transform: translate3d(0, 100%, 0); }
+///   } 
 @mixin keyframes ($name) {
   @-webkit-keyframes #{$name} {
     @content;
@@ -45,80 +74,111 @@
   }
 }
 
-@mixin fade-in () {
+/// Apply the fade-in animation to an element
+/// @param {time} $duration [.75s] - length of the fade in (optional)
+/// @param {string} $name [fade-in] - name of keyframes reference (optional)
+@mixin fade-in ($duration: .75s, $name: fade-in) {
   opacity: 0;
-  @include animation(fade-in ease-in 1);
+  @include animation($name ease-in 1);
   @include animation-fill-mode(forwards);
-  @include animation-duration(.75s);
+  @include animation-duration($duration);
 }
 
-@mixin fade-out () {
-  @include animation(fade-out ease-out 1);
+/// Apply the fade-out animation
+/// @param {time} $duration [.75s] - duration of the animation (optional)
+/// @param {string} $name [fade-out] - name of the referenced keyframes (optional)
+@mixin fade-out ($duration: .75s, $name: fade-out) {
+  @include animation($name ease-out 1);
   @include animation-fill-mode(both);
   @include animation-duration(.75s);
 }
 
-@mixin in-up () {
-  @include animation(in-up ease-out 1);
+/// Apply the in-up animation
+/// @param {time} $duration [0.5s] - duration of the animation (optional)
+/// @param {string} $name [in-up] - name of the referenced keyframes (optional)
+@mixin in-up ($duration: 0.5s, $name: in-up) {
+  @include animation($name ease-out 1);
   @include animation-fill-mode(both);
   @include animation-duration(0.5s);
 }
 
-@mixin in-down () {
-  @include animation(in-down ease-out 1);
+/// Apply the in-down animation
+/// @param {time} $duration [0.5s] - duration of the animation (optional)
+/// @param {string} $name [in-down] - name of the referenced keyframes (optional)
+@mixin in-down ($duration: 0.5s, $name: in-down) {
+  @include animation($name ease-out 1);
   @include animation-fill-mode(both);
   @include animation-duration(0.5s);
 }
 
-@mixin out-up () {
-  @include animation(out-up ease-in 1);
+/// Apply the out-up animation
+/// @param {time} $duration [0.5s] - duration of the animation (optional)
+/// @param {string} $name [out-up] - name of the referenced keyframes (optional)
+@mixin out-up ($duration: 0.5s, $name: out-up) {
+  @include animation($name ease-in 1);
   @include animation-fill-mode(both);
   @include animation-duration(0.5s);
 }
 
-@mixin out-down () {
-  @include animation(out-down ease-in 1);
+/// Apply the out-down animation
+/// @param {time} $duration [0.5s] - duration of the animation (optional)
+/// @param {string} $name [out-down] - name of the referenced keyframes (optional)
+@mixin out-down ($duration: 0.5s, $name: out-down) {
+  @include animation($name ease-in 1);
   @include animation-fill-mode(both);
   @include animation-duration(0.5s);
 }
 
-@mixin fade-in-keyframes () {
-  @include keyframes (fade-in) {
+
+/// Generate keyframes for fade-in
+/// @param {string} $name [fade-in] - name of the generated keyframes (optional)
+@mixin fade-in-keyframes ($name: fade-in) {
+  @include keyframes ($name) {
     0%   { opacity: 0; }
     100% { opacity: 1; }
   }
 }
 
-@mixin fade-out-keyframes () {
-  @include keyframes (fade-out) {
+/// Generate keyframes for fade-out
+/// @param {string} $name [fade-out] - name of the generated keyframes (optional)
+@mixin fade-out-keyframes ($name: fade-out) {
+  @include keyframes ($name) {
     0%   { opacity: 1; }
     100% { opacity: 0; }
   }
 }
 
-@mixin in-up-keyframes () {
-  @include keyframes (in-up) {
+/// Generate keyframes for in-up
+/// @param {string} $name [in-up] - name of the generated keyframes (optional)
+@mixin in-up-keyframes ($name: in-up) {
+  @include keyframes ($name) {
     0%   { transform: translate3d(0, 100%, 0);}
     100% { transform: translate3d(0, 0, 0); }
   }
 }
 
-@mixin in-down-keyframes () {
-  @include keyframes (in-down) {
+/// Generate keyframes for in-down
+/// @param {string} $name [in-down] - name of the generated keyframes (optional)
+@mixin in-down-keyframes ($name: in-down) {
+  @include keyframes ($name) {
     0%   { transform: translate3d(0, -100%, 0);}
     100% { transform: translate3d(0, 0, 0); }
   }
 }
 
-@mixin out-up-keyframes () {
-  @include keyframes (out-up) {
+/// Generate keyframes for out-up
+/// @param {string} $name [out-up] - name of the generated keyframes (optional)
+@mixin out-up-keyframes ($name: out-up) {
+  @include keyframes ($name) {
     0%   { transform: translate3d(0, 0, 0);}
     100% { transform: translate3d(0, 100%, 0); }
   }
 }
 
-@mixin out-down-keyframes () {
-  @include keyframes (out-down) {
+/// Generate keyframes for out-down
+/// @param {string} $name [out-down] - name of the generated keyframes (optional)
+@mixin out-down-keyframes ($name: out-down) {
+  @include keyframes ($name) {
     0%   { transform: translate3d(0, 0, 0);}
     100% { transform: translate3d(0, -100%, 0); }
   }
