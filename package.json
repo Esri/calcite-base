@@ -45,7 +45,7 @@
     "themeleon-swig": "0.*"
   },
   "scripts": {
-    "docs": "sassdoc dist/ --theme ./theme --dest docs",
+    "docs": "sassdoc dist/ --theme ./docs/theme --dest ./docs/output",
     "release": "gh-release",
     "build": "node build.js",
     "start": "npm-watch"
