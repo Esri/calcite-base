@@ -3,7 +3,7 @@
 /// @group Utilities
 ////
 
-/// Adds a clearfix to the item via an `:after` psuedo element
+/// Adds a clearfix to the item via a psuedo element.
 @mixin clearfix() {
   &:after {
     content: '';
@@ -12,8 +12,8 @@
   }
 }
 
-/// Used for overriding styles in right to left languages. When html element has `dir="rtl"`, then styles will be applied
-/// @example scss - rtl mixin
+/// Used for overriding styles in right to left languages. Styles will be applied when html element is in right to left mode.
+/// @example scss
 ///   .myClass { 
 ///     margin-left: 1rem;
 ///     @include rtl {
@@ -43,7 +43,7 @@
   }
 }
 
-/// Hide an element visually, but leave it available to screen readers
+/// Hide an element visually, but leave it available to screen readers.
 @mixin visually-hidden() {
   border: 0;
   clip: rect(0 0 0 0);
@@ -55,7 +55,7 @@
   width: 1px;
 }
 
-/// Hide an element visually, but allow it to be focused (useful for things like skip-to-content links)
+/// Hide an element visually, but allow it to be focused (useful for things like skip-to-content links).
 @mixin visually-hidden-focusable() {
   &:active, &:focus {
     clip: auto;
