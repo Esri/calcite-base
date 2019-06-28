@@ -80,5 +80,5 @@ export const shadow1 = "0 0 12px 0 rgba(0,0,0,0.05)";
 export const shadow1Hover = "0 0 16px 0 rgba(0,0,0,0.1)"; 
 export const shadow1Press = "0 0 16px 0 rgba(0,0,0,0.2)"; 
 export const shadow2 = "0 0 16px 0 rgba(0,0,0,0.15)"; 
-export const shadow2Hover = "0 0 16px 0 rgba(0,0,0,0.2)"; 
-export const shadow2Press = "0 0 16px 0 rgba(0,0,0,0.3)"; 
+export const shadow2Hover = "0 0 20px 0 rgba(0,0,0,0.2)"; 
+export const shadow2Press = "0 0 20px 0 rgba(0,0,0,0.3)"; 

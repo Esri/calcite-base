@@ -81,6 +81,6 @@
   --shadow-1--hover: 0 0 16px 0 rgba(0,0,0,0.1); 
   --shadow-1--press: 0 0 16px 0 rgba(0,0,0,0.2); 
   --shadow-2: 0 0 16px 0 rgba(0,0,0,0.15); 
-  --shadow-2--hover: 0 0 16px 0 rgba(0,0,0,0.2); 
-  --shadow-2--press: 0 0 16px 0 rgba(0,0,0,0.3); 
+  --shadow-2--hover: 0 0 20px 0 rgba(0,0,0,0.2); 
+  --shadow-2--press: 0 0 20px 0 rgba(0,0,0,0.3); 
 }
