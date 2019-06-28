@@ -1,0 +1,31 @@
+////
+/// Shadow mixins apply box shadow to create multiple levels within an interface
+/// @group Shadow
+////
+
+@import "./_variables.scss";
+
+/// Add a shadow to an element from one of calcite's two shadow levels
+/// @param {number} $level [1] - levels above the base (1|2)
+/// @param {string} $state - Optionally define the UI state of element ("hover"|"press")
+@mixin shadow($level, $state) {
+  $shadow: $shadow-1;
+  @if $level > 1 {
+    $shadow: $shadow-2;
+    @if $state == "hover" {
+      $shadow: $shadow-2--hover;
+    }
+    @if $state == "press" {
+      $shadow: $shadow-2--press;
+    }
+  } @else {
+    $shadow: $shadow-1;
+    @if $state == "hover" {
+      $shadow: $shadow-1--hover;
+    }
+    @if $state == "press" {
+      $shadow: $shadow-1--press;
+    }
+  }
+  box-shadow: $shadow;
+}

@@ -21,6 +21,10 @@ module.exports = function (dest, ctx) {
       mixins: ctx.data.filter(d => d.group[0] === 'spacing').map(parseEntry)
     },
     {
+      title: 'Shadow',
+      mixins: ctx.data.filter(d => d.group[0] === 'shadow').map(parseEntry)
+    },
+    {
       title: 'Type', 
       mixins: ctx.data.filter(d => d.group[0] === 'type').map(parseEntry)
     },
