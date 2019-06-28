@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - spacing
   - type
   - utils
+  - shadow
 - Variables in several file formats:
   - Sass
   - ES6 Modules
