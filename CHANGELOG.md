@@ -18,5 +18,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Variables in several file formats:
   - Sass
   - ES6 Modules
+  - JSON
   - TypeScript definitions
   - CSS (Custom Properties)

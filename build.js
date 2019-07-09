@@ -37,10 +37,11 @@ try {
     tsFile += `export const ${camelCaseName}: string; \n`
     jsFile += `export const ${camelCaseName} = "${value}"; \n`
   });
-  
+
   cssFile += "}"
 
   // write files to disk
+  fs.writeFileSync('./dist/index.json', JSON.stringify(data))
   fs.writeFileSync('./dist/index.js', jsFile)
   fs.writeFileSync('./dist/index.d.ts', tsFile)
   fs.writeFileSync('./dist/variables.css', cssFile)
