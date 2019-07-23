@@ -23,6 +23,8 @@
       </header>
       <div class="grid-container leader-2">
         <aside class="column-6 side-nav" aria-role="complementary">
+            <h4 class="side-nav-title">Variables</h4>
+            <a href="#variables" class="side-nav-link">Overview</a>
             
             <h4 class="side-nav-title" id="Spacing">Spacing</h4>
             <nav role="navigation" aria-labelledby="Spacing">
@@ -180,6 +182,452 @@
             
         </aside>
         <main class="column-17 pre-1">
+            <h2 id="variables">Variables</h2>
+            <p>Variables are available in several formats including SASS, CSS Vars, TypeScript, JavaScript, and JSON.</p>
+            <table class="table">
+                <thead>
+                    <td>Variable</td>
+                    <td>Value</td>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td><code>$white</code></td>
+                        <td><code>#fff</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$off-white</code></td>
+                        <td><code>#f8f8f8</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$lightest-gray</code></td>
+                        <td><code>#f3f3f3</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$lighter-gray</code></td>
+                        <td><code>#eaeaea</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$light-gray</code></td>
+                        <td><code>#dfdfdf</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$gray</code></td>
+                        <td><code>#757575</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$dark-gray</code></td>
+                        <td><code>#555</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$darker-gray</code></td>
+                        <td><code>#404040</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$darkest-gray</code></td>
+                        <td><code>#2b2b2b</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$off-black</code></td>
+                        <td><code>#151515</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$black</code></td>
+                        <td><code>#000</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$lightest-blue</code></td>
+                        <td><code>#c7eaff</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$lighter-blue</code></td>
+                        <td><code>#77bde7</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$light-blue</code></td>
+                        <td><code>#2890ce</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$blue</code></td>
+                        <td><code>#007ac2</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$dark-blue</code></td>
+                        <td><code>#00619b</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$darker-blue</code></td>
+                        <td><code>#004874</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$lightest-green</code></td>
+                        <td><code>#bdf2c4</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$lighter-green</code></td>
+                        <td><code>#87d692</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$light-green</code></td>
+                        <td><code>#50ba5f</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$green</code></td>
+                        <td><code>#288835</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$dark-green</code></td>
+                        <td><code>#288835</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$darker-green</code></td>
+                        <td><code>#1a6324</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$lightest-red</code></td>
+                        <td><code>#ffc6bf</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$lighter-red</code></td>
+                        <td><code>#f2877b</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$light-red</code></td>
+                        <td><code>#e65240</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$red</code></td>
+                        <td><code>#d83020</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$dark-red</code></td>
+                        <td><code>#a82b1e</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$darker-red</code></td>
+                        <td><code>#7c1d13</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$transparent-white</code></td>
+                        <td><code>rgba(255,255,255,0.7)</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$opaque-white</code></td>
+                        <td><code>rgba(255,255,255,0.8)</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$transparent-off-white</code></td>
+                        <td><code>rgba(0,0,0,0.1)</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$transparent-darker-gray</code></td>
+                        <td><code>rgba(0,0,0,0.3)</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$transparent-off-black</code></td>
+                        <td><code>rgba(0,0,0,0.45)</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$transparent-black</code></td>
+                        <td><code>rgba(0,0,0,0.75)</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$opaque-black</code></td>
+                        <td><code>rgba(0,0,0,0.85)</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$lightest-orange</code></td>
+                        <td><code>#ffd8bf</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$lighter-orange</code></td>
+                        <td><code>#fdc39f</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$light-orange</code></td>
+                        <td><code>#f89960</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$orange</code></td>
+                        <td><code>#f36f20</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$dark-orange</code></td>
+                        <td><code>#9a4410</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$darker-orange</code></td>
+                        <td><code>#6d2f08</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$lightest-yellow</code></td>
+                        <td><code>#fff7cc</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$lighter-yellow</code></td>
+                        <td><code>#fef3ad</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$light-yellow</code></td>
+                        <td><code>#fbea6e</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$yellow</code></td>
+                        <td><code>#f9e54e</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$dark-yellow</code></td>
+                        <td><code>#d9bc00</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$darker-yellow</code></td>
+                        <td><code>#bfa200</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$lightest-purple</code></td>
+                        <td><code>#e8d9ff</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$lighter-purple</code></td>
+                        <td><code>#cdb9eb</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$light-purple</code></td>
+                        <td><code>#987ac3</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$purple</code></td>
+                        <td><code>#633b9b</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$dark-purple</code></td>
+                        <td><code>#3a1e61</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$darker-purple</code></td>
+                        <td><code>#250f43</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$lightest-brown</code></td>
+                        <td><code>#f7e4cb</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$lighter-brown</code></td>
+                        <td><code>#dec6a8</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$light-brown</code></td>
+                        <td><code>#ad8b62</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$brown</code></td>
+                        <td><code>#7b4f1c</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$dark-brown</code></td>
+                        <td><code>#51310e</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$darker-brown</code></td>
+                        <td><code>#3b2307</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$transition</code></td>
+                        <td><code>150ms ease-in-out</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$box-shadow</code></td>
+                        <td><code>0 0 16px 0 rgba(0,0,0,0.05)</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$easing-function</code></td>
+                        <td><code>cubic-bezier(0.215,0.44,0.42,0.88)</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$transition-short</code></td>
+                        <td><code>150ms ease-in-out</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$transition-medium</code></td>
+                        <td><code>300ms cubic-bezier(0.215,0.44,0.42,0.88)</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$transition-long</code></td>
+                        <td><code>500ms cubic-bezier(0.215,0.44,0.42,0.88)</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$viewport-small</code></td>
+                        <td><code>480px</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$viewport-medium</code></td>
+                        <td><code>860px</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$viewport-large</code></td>
+                        <td><code>1440px</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$baseline-ratio</code></td>
+                        <td><code>1.5</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$baseline</code></td>
+                        <td><code>1.5rem</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$ratio</code></td>
+                        <td><code>1.414</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$medium-ratio</code></td>
+                        <td><code>1.33</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$small-ratio</code></td>
+                        <td><code>1.25</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$body-size</code></td>
+                        <td><code>1rem</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$small-size</code></td>
+                        <td><code>.85rem</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$indent</code></td>
+                        <td><code>1em</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$avenir-tracking</code></td>
+                        <td><code>0</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$avenir-family</code></td>
+                        <td><code>&#39;Avenir Next W01&#39;,&#39;Avenir Next W00&#39;,&#39;Avenir Next&#39;,&#39;Avenir&#39;,&#39;Helvetica Neue&#39;,sans-serif</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$code-tracking</code></td>
+                        <td><code>0</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$code-family</code></td>
+                        <td><code>&#39;Consolas&#39;,&#39;Andale Mono&#39;,&#39;Lucida Console&#39;,&#39;Monaco&#39;,monospace</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$shadow-1</code></td>
+                        <td><code>0 0 12px 0 rgba(0,0,0,0.05)</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$shadow-1--hover</code></td>
+                        <td><code>0 0 16px 0 rgba(0,0,0,0.1)</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$shadow-1--press</code></td>
+                        <td><code>0 0 16px 0 rgba(0,0,0,0.2)</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$shadow-2</code></td>
+                        <td><code>0 0 16px 0 rgba(0,0,0,0.15)</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$shadow-2--hover</code></td>
+                        <td><code>0 0 20px 0 rgba(0,0,0,0.2)</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><code>$shadow-2--press</code></td>
+                        <td><code>0 0 20px 0 rgba(0,0,0,0.3)</code></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
             
             <section class="trailer-3">
                 <h2 class="text-rule trailer-1">Spacing Mixins</h2>
@@ -224,7 +672,7 @@
                     
                     
 
-                
+
                 </section>
                 
 
@@ -238,7 +686,7 @@
                     
                     
 
-                
+
                 </section>
                 
 
@@ -252,7 +700,7 @@
                     
                     
 
-                
+
                 </section>
                 
 
@@ -294,7 +742,7 @@
                     
                     
 
-                
+
                 </section>
                 
 
@@ -308,7 +756,7 @@
                     
                     
 
-                
+
                 </section>
                 
 
@@ -322,7 +770,7 @@
                     
                     
 
-                
+
                 </section>
                 
 
@@ -364,7 +812,7 @@
                     
                     
 
-                
+
                 </section>
                 
 
@@ -378,7 +826,7 @@
                     
                     
 
-                
+
                 </section>
                 
 
@@ -392,7 +840,7 @@
                     
                     
 
-                
+
                 </section>
                 
 
@@ -434,7 +882,7 @@
                     
                     
 
-                
+
                 </section>
                 
 
@@ -448,7 +896,7 @@
                     
                     
 
-                
+
                 </section>
                 
 
@@ -462,7 +910,7 @@
                     
                     
 
-                
+
                 </section>
                 
 
@@ -524,7 +972,7 @@
                     
                     
 
-                
+
                 </section>
                 
 
@@ -545,7 +993,7 @@
                     
                     
 
-                
+
                 </section>
                 
 
@@ -559,7 +1007,7 @@
                     
                     
 
-                
+
                 </section>
                 
 
@@ -573,7 +1021,7 @@
                     
                     
 
-                
+
                 </section>
                 
 
@@ -587,7 +1035,7 @@
                     
                     
 
-                
+
                 </section>
                 
 
@@ -601,7 +1049,7 @@
                     
                     
 
-                
+
                 </section>
                 
 
@@ -615,7 +1063,7 @@
                     
                     
 
-                
+
                 </section>
                 
 
@@ -629,7 +1077,7 @@
                     
                     
 
-                
+
                 </section>
                 
 
@@ -643,7 +1091,7 @@
                     
                     
 
-                
+
                 </section>
                 
 
@@ -694,7 +1142,7 @@
                     
                     
 
-                
+
                 </section>
                 
 
@@ -747,7 +1195,7 @@
                     
                     
 
-                
+
                 </section>
                 
 
@@ -798,7 +1246,7 @@
                     
                     
 
-                
+
                 </section>
                 
 
@@ -812,7 +1260,7 @@
                     
                     
 
-                
+
                 </section>
                 
 
@@ -826,7 +1274,7 @@
                     
                     
 
-                
+
                 </section>
                 
 
@@ -840,7 +1288,7 @@
                     
                     
 
-                
+
                 </section>
                 
 
@@ -854,7 +1302,7 @@
                     
                     
 
-                
+
                 </section>
                 
 
@@ -868,7 +1316,7 @@
                     
                     
 
-                
+
                 </section>
                 
 
@@ -882,7 +1330,7 @@
                     
                     
 
-                
+
                 </section>
                 
 
@@ -933,7 +1381,7 @@
                     
                     
 
-                
+
                 </section>
                 
 
@@ -997,7 +1445,7 @@
                     
                     
 
-                
+
                 </section>
                 
 
@@ -1050,7 +1498,7 @@ Use only whole numbers to maintain proper typographic scale.
                     
                     
 
-                
+
                 </section>
                 
 
@@ -1071,7 +1519,7 @@ Use only whole numbers to maintain proper typographic scale.
                     
                     
 
-                
+
                 </section>
                 
 
@@ -1100,7 +1548,7 @@ Use only whole numbers to maintain proper typographic scale.
                     
                     
 
-                
+
                 </section>
                 
 
@@ -1114,7 +1562,7 @@ Use only whole numbers to maintain proper typographic scale.
                     
                     
 
-                
+
                 </section>
                 
 
@@ -1128,7 +1576,7 @@ Use only whole numbers to maintain proper typographic scale.
                     
                     
 
-                
+
                 </section>
                 
 
@@ -1142,7 +1590,7 @@ Use only whole numbers to maintain proper typographic scale.
                     
                     
 
-                
+
                 </section>
                 
 
@@ -1156,7 +1604,7 @@ Use only whole numbers to maintain proper typographic scale.
                     
                     
 
-                
+
                 </section>
                 
 
@@ -1205,7 +1653,7 @@ Use only whole numbers to maintain proper typographic scale.
                     
                     
 
-                
+
                 </section>
                 
 
@@ -1247,7 +1695,7 @@ Use only whole numbers to maintain proper typographic scale.
                     
                     
 
-                
+
                 </section>
                 
 
@@ -1289,7 +1737,7 @@ Use only whole numbers to maintain proper typographic scale.
                     
                     
 
-                
+
                 </section>
                 
 
@@ -1331,7 +1779,7 @@ Use only whole numbers to maintain proper typographic scale.
                     
                     
 
-                
+
                 </section>
                 
 
@@ -1373,7 +1821,7 @@ Use only whole numbers to maintain proper typographic scale.
                     
                     
 
-                
+
                 </section>
                 
 
@@ -1415,7 +1863,7 @@ Use only whole numbers to maintain proper typographic scale.
                     
                     
 
-                
+
                 </section>
                 
 
@@ -1457,7 +1905,7 @@ Use only whole numbers to maintain proper typographic scale.
                     
                     
 
-                
+
                 </section>
                 
 
@@ -1499,7 +1947,7 @@ Use only whole numbers to maintain proper typographic scale.
                     
                     
 
-                
+
                 </section>
                 
 
@@ -1541,7 +1989,7 @@ Use only whole numbers to maintain proper typographic scale.
                     
                     
 
-                
+
                 </section>
                 
 
@@ -1597,7 +2045,7 @@ Use only whole numbers to maintain proper typographic scale.
                     
                     
 
-                
+
                 </section>
                 
 
@@ -1652,7 +2100,7 @@ Use only whole numbers to maintain proper typographic scale.
                     
                     
 
-                
+
                 </section>
                 
 
@@ -1707,7 +2155,7 @@ Use only whole numbers to maintain proper typographic scale.
                     
                     
 
-                
+
                 </section>
                 
 
@@ -1762,7 +2210,7 @@ Use only whole numbers to maintain proper typographic scale.
                     
                     
 
-                
+
                 </section>
                 
 
@@ -1817,7 +2265,7 @@ Use only whole numbers to maintain proper typographic scale.
                     
                     
 
-                
+
                 </section>
                 
 
@@ -1872,7 +2320,7 @@ Use only whole numbers to maintain proper typographic scale.
                     
                     
 
-                
+
                 </section>
                 
 
@@ -1927,7 +2375,7 @@ Use only whole numbers to maintain proper typographic scale.
                     
                     
 
-                
+
                 </section>
                 
 
@@ -1969,7 +2417,7 @@ Use only whole numbers to maintain proper typographic scale.
                     
                     
 
-                
+
                 </section>
                 
 
@@ -2011,7 +2459,7 @@ Use only whole numbers to maintain proper typographic scale.
                     
                     
 
-                
+
                 </section>
                 
 
@@ -2053,7 +2501,7 @@ Use only whole numbers to maintain proper typographic scale.
                     
                     
 
-                
+
                 </section>
                 
 
@@ -2095,7 +2543,7 @@ Use only whole numbers to maintain proper typographic scale.
                     
                     
 
-                
+
                 </section>
                 
 
@@ -2137,7 +2585,7 @@ Use only whole numbers to maintain proper typographic scale.
                     
                     
 
-                
+
                 </section>
                 
 
@@ -2179,7 +2627,7 @@ Use only whole numbers to maintain proper typographic scale.
                     
                     
 
-                
+
                 </section>
                 
 
@@ -2276,7 +2724,7 @@ Use only whole numbers to maintain proper typographic scale.
                     
                     
 
-                
+
                 </section>
                 
 
@@ -2284,4 +2732,3 @@ Use only whole numbers to maintain proper typographic scale.
             
         </main>
       </div>
- 
