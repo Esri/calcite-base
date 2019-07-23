@@ -71,7 +71,7 @@ $dark-brown:      $h-br-080 !default;
 $darker-brown:    $h-br-090 !default;
 
 // animation
-$transition:      150ms linear !default;
+$transition:      150ms ease-in-out !default;
 $box-shadow:      0 0 16px 0 rgba(0, 0, 0, .05) !default;
 $easing-function: cubic-bezier(0.215, 0.440, 0.420, 0.880) !default;
 
