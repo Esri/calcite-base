@@ -71,33 +71,37 @@ $dark-brown:      $h-br-080 !default;
 $darker-brown:    $h-br-090 !default;
 
 // animation
-$transition:      150ms linear                !default;
-$box-shadow:      0 0 16px 0 rgba(0,0,0,.05)  !default;
+$transition:      150ms linear !default;
+$box-shadow:      0 0 16px 0 rgba(0, 0, 0, .05) !default;
 $easing-function: cubic-bezier(0.215, 0.440, 0.420, 0.880) !default;
+
+$transition-short:  $transition !default;
+$transition-medium: 300ms $easing-function !default;
+$transition-long:   500ms $easing-function !default;
 
 // breakpoints
 $viewport-small:  480px  !default;
 $viewport-medium: 860px  !default;
 $viewport-large:  1440px !default;
 
-// type 
-$baseline-ratio:  1.5                    !default;
+// type
+$baseline-ratio:  1.5 !default;
 $baseline:        $baseline-ratio * 1rem !default;
-$ratio:           1.414;
-$medium-ratio:    1.33;
-$small-ratio:     1.25;
-$body-size:       1rem;
-$small-size:      0.85rem;
-$indent:          1em;
-$avenir-tracking: 0;
-$avenir-family:   'Avenir Next W01', 'Avenir Next W00', 'Avenir Next', 'Avenir', 'Helvetica Neue', sans-serif;
-$code-tracking:   0;
-$code-family:     'Consolas', 'Andale Mono', 'Lucida Console', 'Monaco', monospace;
+$ratio:           1.414 !default;
+$medium-ratio:    1.33 !default;
+$small-ratio:     1.25 !default;
+$body-size:       1rem !default;
+$small-size:      0.85rem !default;
+$indent:          1em !default;
+$avenir-tracking: 0 !default;
+$avenir-family:   'Avenir Next W01', 'Avenir Next W00', 'Avenir Next', 'Avenir', 'Helvetica Neue', sans-serif !default;
+$code-tracking:   0 !default;
+$code-family:     'Consolas', 'Andale Mono', 'Lucida Console', 'Monaco', monospace !default;
 
 // shadows
-$shadow-1 : 0 0 12px 0 rgba(0,0,0,0.05);
-$shadow-1--hover: 0 0 16px 0 rgba(0,0,0,0.1);
-$shadow-1--press: 0 0 16px 0 rgba(0,0,0,0.2);
-$shadow-2: 0 0 16px 0 rgba(0, 0, 0, 0.15);
-$shadow-2--hover: 0 0 20px 0 rgba(0, 0, 0, 0.2);
-$shadow-2--press: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+$shadow-1:        0 0 12px 0 rgba(0, 0, 0, 0.05) !default;
+$shadow-1--hover: 0 0 16px 0 rgba(0, 0, 0, 0.1) !default;
+$shadow-1--press: 0 0 16px 0 rgba(0, 0, 0, 0.2) !default;
+$shadow-2:        0 0 16px 0 rgba(0, 0, 0, 0.15) !default;
+$shadow-2--hover: 0 0 20px 0 rgba(0, 0, 0, 0.2) !default;
+$shadow-2--press: 0 0 20px 0 rgba(0, 0, 0, 0.3) !default;
