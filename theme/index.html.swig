@@ -23,6 +23,8 @@
       </header>
       <div class="grid-container leader-2">
         <aside class="column-6 side-nav" aria-role="complementary">
+            <h4 class="side-nav-title">Variables</h4>
+            <a href="#variables" class="side-nav-link">Overview</a>
             {% for group in groups %}
             <h4 class="side-nav-title" id="{{group.title}}">{{ group.title }}</h4>
             <nav role="navigation" aria-labelledby="{{group.title}}">
@@ -33,6 +35,22 @@
             {% endfor %}
         </aside>
         <main class="column-17 pre-1">
+            <h2 id="variables">Variables</h2>
+            <p>Variables are available in several formats including SASS, CSS Vars, TypeScript, JavaScript, and JSON.</p>
+            <table class="table">
+                <thead>
+                    <td>Variable</td>
+                    <td>Value</td>
+                </thead>
+                <tbody>
+                    {% for variable in variables %}
+                    <tr>
+                        <td><code>{{variable.key}}</code></td>
+                        <td><code>{{variable.value}}</code></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
             {% for group in groups %}
             <section class="trailer-3">
                 <h2 class="text-rule trailer-1">{{ group.title }} Mixins</h2>
@@ -89,7 +107,7 @@
                     {% endfor %}
                     {% endif %}
 
-                
+
                 </section>
                 {% endfor %}
 
@@ -97,4 +115,3 @@
             {% endfor %}
         </main>
       </div>
- 

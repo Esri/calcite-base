@@ -2,6 +2,7 @@ var themeleon = require('themeleon')().use('swig')
 var theme = themeleon(__dirname, function (t) {
   t.swig('index.html.swig', 'index.html')
 })
+var variables = require('../dist/index.json');
 
 function parseEntry (d) {
   return {
@@ -17,7 +18,7 @@ function parseEntry (d) {
 module.exports = function (dest, ctx) {
   ctx.groups = [
     {
-      title: 'Spacing', 
+      title: 'Spacing',
       mixins: ctx.data.filter(d => d.group[0] === 'spacing').map(parseEntry)
     },
     {
@@ -25,7 +26,7 @@ module.exports = function (dest, ctx) {
       mixins: ctx.data.filter(d => d.group[0] === 'shadow').map(parseEntry)
     },
     {
-      title: 'Type', 
+      title: 'Type',
       mixins: ctx.data.filter(d => d.group[0] === 'type').map(parseEntry)
     },
     {
@@ -41,5 +42,6 @@ module.exports = function (dest, ctx) {
       mixins: ctx.data.filter(d => d.group[0] === 'responsive').map(parseEntry)
     }
   ]
+  ctx.variables = Object.keys(variables).map(key => ({key, value: variables[key]}));
   return theme.apply(this, arguments)
 }
