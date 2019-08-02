@@ -77,7 +77,7 @@ Note when using partial imports like this, the hyphenated variables become camel
 
 ## Licensing
 
-COPYRIGHT © 2018 Esri
+COPYRIGHT © 2019 Esri
 
 All rights reserved under the copyright laws of the United States
 and applicable international laws, treaties, and conventions.
