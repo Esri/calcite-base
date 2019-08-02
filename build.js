@@ -5,8 +5,7 @@ const now = new Date().getTime()
 const filePaths = {
   js: './dist/index.js',
   ts: './dist/index.d.ts',
-  css: './dist/variables.css',
-  scss: './dist/_variables.scss'
+  css: './dist/variables.css'
 }
 
 try {
@@ -18,12 +17,9 @@ try {
 
 try {
   // generate new object of tokens
-  const data = scssToJson('./variables.scss', {
-    dependencies: [{ path: './node_modules/@esri/calcite-colors/colors.scss' }]
-  })
+  const data = scssToJson('./dist/_variables.scss')
 
   // iterate over the tokens and build all the files
-  let sassFile = ""
   let cssFile = ":root { \n"
   let tsFile = ""
   let jsFile = ""
@@ -32,7 +28,6 @@ try {
     const value = data[n];
     const name = n.substring(1);
     const camelCaseName = camelCase(name)
-    sassFile += `$${name}: ${value} !default; \n`
     cssFile += `  --${name}: ${value}; \n`
     tsFile += `export const ${camelCaseName}: string; \n`
     jsFile += `export const ${camelCaseName} = "${value}"; \n`
@@ -45,7 +40,6 @@ try {
   fs.writeFileSync('./dist/index.js', jsFile)
   fs.writeFileSync('./dist/index.d.ts', tsFile)
   fs.writeFileSync('./dist/variables.css', cssFile)
-  fs.writeFileSync('./dist/_variables.scss', sassFile)
 
   console.log(`✨ successfully built files in ${new Date().getTime() - now}ms`)
 } catch (e) {
