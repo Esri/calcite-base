@@ -2,14 +2,13 @@
   "name": "@esri/calcite-base",
   "version": "1.0.0",
   "description": "Tokens, mixins, and other Sass utilities for Esri's Calcite Design System",
-  "private": false,
   "homepage": "https://github.com/Esri/calcite-base",
   "main": "dist/index.js",
   "js-next:main": "dist/index.js",
   "module": "dist/index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/Esri/calcite-colors.git"
+    "url": "git://github.com/Esri/calcite-base.git"
   },
   "author": {
     "name": "Esri"
