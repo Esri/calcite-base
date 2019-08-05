@@ -4,8 +4,10 @@ The calcite-base repository holds the variables and mixins used in Calcite Web. 
 
 - motion (easing functions, transitions)
 - type (font stacks, sizing, spacing mixins)
-- colors (aliases for [@esri/calcite-colors](https://github.com/Esri/calcite-colors), UI colors, etc)
 - reponsive design (breakpoints, respond-to mixins)
+- utilities (clearfix, show/hide, etc)
+- shadow (defined levels of depth)
+- spacing (standardized vertical/horizontal spacing units)
 
 ## Install
 
@@ -25,17 +27,8 @@ In a Sass project, simply import calcite-base into your project and use the vari
 @import "./node_modules/@esri/calcite-base/dist/_index.scss";
 
 .myClass {
-  color: $blue;
   @include font-size(-1);
 }
-```
-
-If you want to override any of the variables locally, make sure you put your declarations _first_:
-
-```scss
-$blue: #0196ff; // local override for blue
-
-@import "./node_modules/@esri/calcite-base/dist/_index.scss";
 ```
 
 If you only require certain mixins, you can import each section directly as well:
@@ -60,7 +53,7 @@ If you are using PostCSS (or standard CSS) there are a series of files which dec
 @import "./node_modules/@esri/calcite-base/dist/variables.css";
 
 .myClass {
-  color: var(--blue);
+  box-shadow: var(--box-shadow);
 }
 ```
 
