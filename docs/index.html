@@ -1152,7 +1152,7 @@
                 <section id="Type-font-size" class="trailer-2">
                     <h3 class="font-size-2 avenir-bold">
                         font-size
-                        ($n)
+                        ($n, $line-height)
                     </h3>
                     <p>Apply responsive text sizing to an element.
 Use only whole numbers to maintain proper typographic scale.
@@ -1183,6 +1183,19 @@ Use only whole numbers to maintain proper typographic scale.
                                 </td>
                                 </tr>
                             
+                                <tr class="item__parameter">
+                                    <th><code>$line-height</code></th>
+                                    <td>line-height you'd like to use (default chosen based on size)</td>
+                                    <td data-label="type">
+                                        <span class="label">number</span>
+                                    </td>
+                                    <td>
+                                    
+                                        &mdash;<span class="visually-hidden"> none</span>
+                                    
+                                </td>
+                                </tr>
+                            
                             </tbody>
                         </table>
                     
@@ -1193,7 +1206,7 @@ Use only whole numbers to maintain proper typographic scale.
 
                         
                         <pre class="language-scss"><code>@include font-size(-1); // one step smaller on the scale
-@include font-size(2); // two steps larger on the scale</code></pre>
+@include font-size(2, 1.25); // two steps larger on the scale, 1.25 line-height</code></pre>
 
                     
                     
