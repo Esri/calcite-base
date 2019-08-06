@@ -177,25 +177,30 @@
 /// Apply responsive text sizing to an element.
 /// Use only whole numbers to maintain proper typographic scale.
 /// @param {number} $n - negative or positive number (0 is default size)
+/// @param {number} $line-height - line-height you'd like to use (default chosen based on size)
 /// @example scss
 ///   @include font-size(-1); // one step smaller on the scale
-///   @include font-size(2); // two steps larger on the scale
-@mixin font-size($n) {
+///   @include font-size(2, 1.25); // two steps larger on the scale, 1.25 line-height
+@mixin font-size($n, $line-height: null) {
   font-size: modular-scale($n, $ratio);
-  @if $n > 7 {
-    line-height: $baseline-ratio*.85;
-  }
-  @else if $n <= 7 and $n > 5 {
-    line-height: $baseline-ratio*.875;
-  }
-  @else if $n <= 5 and $n > 3 {
-    line-height: $baseline-ratio*.9;
-  }
-  @else if $n <= 3 and $n > 2 {
-    line-height: $baseline-ratio*.925;
-  }
-  @else if $n <= 2 {
-    line-height: $baseline-ratio;
+  @if $line-height {
+    line-height: $line-height;
+  } @else {
+    @if $n > 7 {
+      line-height: $baseline-ratio*.85;
+    }
+    @else if $n <= 7 and $n > 5 {
+      line-height: $baseline-ratio*.875;
+    }
+    @else if $n <= 5 and $n > 3 {
+      line-height: $baseline-ratio*.9;
+    }
+    @else if $n <= 3 and $n > 2 {
+      line-height: $baseline-ratio*.925;
+    }
+    @else if $n <= 2 {
+      line-height: $baseline-ratio;
+    }
   }
   @if $n > 0 {
     @media screen and (max-width: $viewport-medium - 1) {
