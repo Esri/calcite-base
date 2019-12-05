@@ -20,10 +20,10 @@
   --avenir-family: 'Avenir Next W01','Avenir Next W00','Avenir Next','Avenir','Helvetica Neue',sans-serif; 
   --code-tracking: 0; 
   --code-family: 'Consolas','Andale Mono','Lucida Console','Monaco',monospace; 
-  --shadow-1: 0 0 12px 0 rgba(0,0,0,0.05); 
-  --shadow-1--hover: 0 0 16px 0 rgba(0,0,0,0.1); 
-  --shadow-1--press: 0 0 16px 0 rgba(0,0,0,0.2); 
-  --shadow-2: 0 0 16px 0 rgba(0,0,0,0.15); 
-  --shadow-2--hover: 0 0 20px 0 rgba(0,0,0,0.2); 
-  --shadow-2--press: 0 0 20px 0 rgba(0,0,0,0.3); 
+  --shadow-1: 0 0 8px 0 rgba(0,0,0,.08);
+  --shadow-1:hover: 0 0 16px 0 rgba(0,0,0,.08);
+  --shadow-1:pressed: 0 0 8px 0 rgba(0,0,0,.16);
+  --shadow-2: 0 0 16px 0 rgba(0,0,0,0.16); 
+  --shadow-2--hover: 0 0 32px 0 rgba(0,0,0,0.16); 
+  --shadow-2--pressed: 0 0 16px 0 rgba(0,0,0,0.32); 
 }
