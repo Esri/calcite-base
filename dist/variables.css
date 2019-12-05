@@ -21,9 +21,9 @@
   --code-tracking: 0; 
   --code-family: 'Consolas','Andale Mono','Lucida Console','Monaco',monospace; 
   --shadow-1: 0 0 8px 0 rgba(0,0,0,.08);
-  --shadow-1:hover: 0 0 16px 0 rgba(0,0,0,.08);
-  --shadow-1:press: 0 0 8px 0 rgba(0,0,0,.16);
+  --shadow-1-hover: 0 0 16px 0 rgba(0,0,0,.08);
+  --shadow-1-press: 0 0 8px 0 rgba(0,0,0,.16);
   --shadow-2: 0 0 16px 0 rgba(0,0,0,0.16); 
-  --shadow-2--hover: 0 0 32px 0 rgba(0,0,0,0.16); 
-  --shadow-2--press: 0 0 16px 0 rgba(0,0,0,0.32); 
+  --shadow-2-hover: 0 0 32px 0 rgba(0,0,0,0.16); 
+  --shadow-2-press: 0 0 16px 0 rgba(0,0,0,0.32); 
 }
