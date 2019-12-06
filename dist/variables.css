@@ -1,6 +1,5 @@
 :root { 
   --transition: 150ms ease-in-out; 
-  --box-shadow: 0 0 16px 0 rgba(0,0,0,0.05); 
   --easing-function: cubic-bezier(0.215,0.44,0.42,0.88); 
   --transition-short: 150ms ease-in-out; 
   --transition-medium: 300ms cubic-bezier(0.215,0.44,0.42,0.88); 

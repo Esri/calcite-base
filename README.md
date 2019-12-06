@@ -53,7 +53,7 @@ If you are using PostCSS (or standard CSS) there are a series of files which dec
 @import "./node_modules/@esri/calcite-base/dist/variables.css";
 
 .myClass {
-  box-shadow: var(--box-shadow);
+  box-shadow: var(--shadow-1);
 }
 ```
 
