@@ -25,4 +25,5 @@
   --shadow-2: 0 0 16px 0 rgba(0,0,0,0.16); 
   --shadow-2-hover: 0 0 32px 0 rgba(0,0,0,0.16); 
   --shadow-2-press: 0 0 16px 0 rgba(0,0,0,0.32); 
+  --border-radius: 3px;
 }
