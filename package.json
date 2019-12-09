@@ -1,6 +1,6 @@
 {
   "name": "@esri/calcite-base",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Tokens, mixins, and other Sass utilities for Esri's Calcite Design System",
   "homepage": "https://github.com/Esri/calcite-base",
   "main": "dist/index.js",
