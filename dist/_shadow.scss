@@ -13,18 +13,18 @@
   @if $level > 1 {
     $shadow: $shadow-2;
     @if $state == "hover" {
-      $shadow: $shadow-2--hover;
+      $shadow: $shadow-2-hover;
     }
     @if $state == "press" {
-      $shadow: $shadow-2--press;
+      $shadow: $shadow-2-press;
     }
   } @else {
     $shadow: $shadow-1;
     @if $state == "hover" {
-      $shadow: $shadow-1--hover;
+      $shadow: $shadow-1-hover;
     }
     @if $state == "press" {
-      $shadow: $shadow-1--press;
+      $shadow: $shadow-1-press;
     }
   }
   box-shadow: $shadow;
