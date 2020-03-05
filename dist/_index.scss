@@ -1,7 +1,7 @@
-@import "./_variables.scss";
-@import "./_animation.scss";
-@import "./_responsive.scss";
-@import "./_spacing.scss";
-@import "./_shadow.scss";
-@import "./_type.scss";
-@import "./_utils.scss";
+@forward "./_animation.scss";
+@forward "./_responsive.scss";
+@forward "./_spacing.scss";
+@forward "./_shadow.scss";
+@forward "./_type.scss";
+@forward "./_utils.scss";
+@forward "./_variables.scss";

@@ -3,7 +3,7 @@
 /// @group Type
 ////
 
-@import "./_variables.scss";
+@use "./_variables.scss" as *;
 
 /// Render text in a light weight (300)
 @mixin avenir-light() {

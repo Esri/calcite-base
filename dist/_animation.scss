@@ -2,7 +2,7 @@
 /// Type mixins provide mixins for styling text.
 /// @group Animation
 ////
-@import "./_variables.scss";
+@use "./_variables.scss" as *;
 
 /// Generate a prefixed version of the animation property
 /// @param {string} $animations... - one or more (comma separated) animations to be prefixed
@@ -64,7 +64,7 @@
 ///   @include keyframes(out-up) {
 ///     0%   { transform: translate3d(0, 0, 0);}
 ///     100% { transform: translate3d(0, 100%, 0); }
-///   } 
+///   }
 @mixin keyframes ($name) {
   @-webkit-keyframes #{$name} {
     @content;

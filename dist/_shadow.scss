@@ -3,7 +3,7 @@
 /// @group Shadow
 ////
 
-@import "./_variables.scss";
+@use "./_variables.scss" as *;
 
 /// Add a shadow to an element from one of calcite's two shadow levels
 /// @param {number} $level [1] - levels above the base (1|2)
