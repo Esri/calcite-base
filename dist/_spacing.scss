@@ -3,7 +3,7 @@
 /// @group Spacing
 ////
 
-@import "./_variables.scss";
+@use "./_variables.scss" as *;
 
 /// Apply n units of baseline as margin to the top of an elements
 /// @param {number} $n - positive or negative number (0 is normal)
@@ -44,8 +44,3 @@
 
 /// Apply a quarter unit of baseline as padding to the bottom of an element
 @mixin padding-trailer-quarter() { padding-bottom: 0.25 * $baseline; }
-
-
-
-
-

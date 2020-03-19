@@ -68,6 +68,19 @@ console.log(avenirLight); // '"Avenir Next", "Avenir", "Helvetica Neue", sans-se
 
 Note when using partial imports like this, the hyphenated variables become camel case.
 
+### Sass Module
+
+[Sass module](https://sass-lang.com/blog/the-module-system-is-launched) syntax is available on the [`sass-module` branch](https://github.com/Esri/calcite-base/tree/sass-module)
+
+```css
+@use "@esri/calcite-base/dist" as calcite;
+
+.myClass {
+  font-family: calcite.$avenir-family;
+  @include calcite.font-size(1);
+}
+```
+
 ## Licensing
 
 COPYRIGHT © 2020 Esri
