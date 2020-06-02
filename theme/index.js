@@ -18,10 +18,6 @@ function parseEntry (d) {
 module.exports = function (dest, ctx) {
   ctx.groups = [
     {
-      title: 'Spacing',
-      mixins: ctx.data.filter(d => d.group[0] === 'spacing').map(parseEntry)
-    },
-    {
       title: 'Shadow',
       mixins: ctx.data.filter(d => d.group[0] === 'shadow').map(parseEntry)
     },
