@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Unreleased
 
 ### Removed
-- removed spacing mixins
+- [**BREAKING**] removed spacing mixins
 
 ### Added
 - added new spacing scale variables
