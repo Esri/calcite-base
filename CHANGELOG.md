@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - added new spacing scale variables
+- added new focus style mixins
 
 ### Fixed
 - updated a few shadow variables that seemed to have inconsistent names / values

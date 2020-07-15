@@ -1,6 +1,6 @@
 # Calcite Base
 
-The calcite-base repository holds the variables and mixins used in Calcite Web. This includes resources regarding:
+The calcite-base repository holds the variables and mixins used in Calcite Components. This includes resources regarding:
 
 - motion (easing functions, transitions)
 - type (font stacks, sizing, spacing mixins)
@@ -17,7 +17,7 @@ If you use npm, installation is as easy as:
 npm install @esri/calcite-base
 ```
 
-You can also [download the latest release manually](https://github.com/Esri/calcite-colors/releases).
+You can also [download the latest release manually](https://github.com/Esri/calcite-base/releases).
 
 ## Use
 
@@ -56,6 +56,10 @@ If you are using PostCSS (or standard CSS) there are a series of files which dec
   box-shadow: var(--shadow-1);
 }
 ```
+
+### Focus State Styling
+
+The included focus state styling mixins rely on a `--calcite-ui-blue-1` variable from `calcite-colors`. You can [find the Calcite Colors repository on GitHub](https://github.com/Esri/calcite-colors).
 
 ### JavaScript
 
