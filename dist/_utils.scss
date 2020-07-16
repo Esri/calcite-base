@@ -66,3 +66,12 @@
     width: auto;
   }
 }
+
+/// Add transparency to a requested color
+/// @param {string} $color - Pass a color value
+/// @param {number} $level - Pass an alpha level as number
+
+@function transparency($color, $level) {
+  $result: rgba($color, $level);
+  @return $result;
+}
