@@ -1,5 +1,5 @@
 var flattenColorPalette = require('tailwindcss/lib/util/flattenColorPalette').default;
-
+const plugin = require('tailwindcss/plugin');
 module.exports = {
   theme: {
     borderColor: theme => ({
@@ -66,19 +66,6 @@ module.exports = {
       6: "var(--calcite-font-size-6)",      // 48px
       7: "var(--calcite-font-size-7)",      // 56px
       8: "var(--calcite-font-size-8)",      // 64px
-      // TODO: temp selectors to be renamed before closing https://github.com/Esri/calcite-components/issues/1500
-      "-3h": [ "var(--calcite-font-size--3)", { lineHeight: '0.75rem' } ], // 10px (0.625rem)
-      "-2h": [ "var(--calcite-font-size--2)", { lineHeight: '1rem' } ],    // 12px (0.75rem)
-      "-1h": [ "var(--calcite-font-size--1)", { lineHeight: '1rem' } ],    // 14px (0.875rem)
-      "0h": [ "var(--calcite-font-size-0)", { lineHeight: '1.25rem' } ],   // 16px (1rem)
-      "1h": [ "var(--calcite-font-size-1)", { lineHeight: '1.5rem' } ],    // 18px (1.125rem)
-      "2h": [ "var(--calcite-font-size-2)", { lineHeight: '1.5rem' } ],    // 20px (1.25rem)
-      "3h": [ "var(--calcite-font-size-3)", { lineHeight: '2rem' } ],      // 26px (1.625rem)
-      "4h": [ "var(--calcite-font-size-4)", { lineHeight: '2.5rem' } ],    // 32px (2rem)
-      "5h": [ "var(--calcite-font-size-5)", { lineHeight: '3rem' } ],      // 40px (2.5rem)
-      "6h": [ "var(--calcite-font-size-6)", { lineHeight: '4rem' } ],      // 48px (3rem)
-      "7h": [ "var(--calcite-font-size-7)", { lineHeight: '4rem' } ],      // 56px (3.5rem)
-      "8h": [ "var(--calcite-font-size-8)", { lineHeight: '5rem' } ],      // 64px (4rem)
     },
     fontWeight: {
       // assets/styles/_type

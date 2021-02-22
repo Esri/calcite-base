@@ -6,7 +6,6 @@
     <meta name="description" content="Mixins and Variables for Sass projects">
     <script type="module" src="https://unpkg.com/@esri/calcite-components/dist/calcite/calcite.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/@esri/calcite-components/dist/calcite/calcite.js"></script>
-    <script type="module" src="./docs.js"></script>
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/@esri/calcite-components/dist/calcite/calcite.css" />
     <link rel="stylesheet" href="https://webapps-cdn.esri.com/CDN/fonts/v1.4.1/fonts.css" />
     <link rel="stylesheet" type="text/css" href="./tailwind.css" />
@@ -68,8 +67,8 @@
           <main class="flex-1">
             <section id="overview" class="bg-foreground-1 block w-full p-6 rounded shadow-border-bottom">
               <h2 class="font-medium text-3 my-4">Overview</h2>
-              <p class="mb-4">For the most part, Calcite leverages the built in classes supplied by Tailwind. For more information about tailwind classes, see <calcite-link href="https://tailwindcss.com/docs">the tailwind documentation</calcite-link>.</p>
-              <p>Calcite base includes some customization of Tailwind in terms of how to use color, etc. Read through the docs below to get an idea of what's possible with Calcite Tailwind's classes.</p>
+              <p class="mb-4">For the most part, Calcite leverages the built in classes supplied by Tailwind. For more information about tailwind classes, see <calcite-link href="https://tailwindcss.com/docs">the tailwind documentation</calcite-link>. This guide is intended to be a "cheat sheet" for quickly viewing what's available.</p>
+              <p>Calcite base includes some customization of Tailwind in terms of how to use color, etc. Browse the sections below to see what classes are included in Calcite's tailwind config.</p>
             </section>
             <section id="spacing" class="mt-8 bg-foreground-1 block w-full p-6 rounded shadow-border-bottom">
               <h2 class="font-medium text-3 my-4">Spacing</h2>
@@ -155,7 +154,6 @@
               <h2 class="font-medium text-3 my-4">Colors</h2>
               <p class="mb-8">The following colors are made available for multiple classes such as borders, backgrounds, text, etc. The colors can be customized via the underlying CSS Variables, see calcite components docs regarding theming for more information.</p>
               <div class="flow-root">
-
                 <div class="w-1/3 float-left">
                   <div class="mb-8 mr-8">
                     <div class="bg-brand py-12 rounded-t"></div>
@@ -276,82 +274,82 @@
                 <div class="flex flex-col flex-1 py-6 px-1">
                   <div>
                     <h3 class="font-medium text-0 mb-4">direction</h3>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.flex-row</div>
                     </div>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.flex-col</div>
                     </div>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.flex-row-reverse</div>
                     </div>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.flex-col-reverse</div>
                     </div>
                   </div>
                   <div class="mt-8">
                     <h3 class="font-medium text-0 mb-4">wrap</h3>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.flex-wrap</div>
                     </div>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.flex-no-wrap</div>
                     </div>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.flex-wrap-reverse</div>
                     </div>
                   </div>
                   <div class="mt-8">
                     <h3 class="font-medium text-0 mb-4">align-items</h3>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.items-stretch</div>
                     </div>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.items-start</div>
                     </div>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.items-center</div>
                     </div>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.items-end</div>
                     </div>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.items-baseline</div>
                     </div>
                   </div>
                   <div class="mt-8">
                     <h3 class="font-medium text-0 mb-4">align-content</h3>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.content-start</div>
                     </div>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.content-center</div>
                     </div>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.content-end</div>
                     </div>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.content-between</div>
                     </div>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.content-around</div>
                     </div>
                   </div>
                   <div class="mt-8">
                     <h3 class="font-medium text-0 mb-4">justify-content</h3>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.justify-start</div>
                     </div>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.justify-center</div>
                     </div>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.justify-end</div>
                     </div>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.justify-between</div>
                     </div>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.justify-around</div>
                     </div>
                   </div>
@@ -359,67 +357,67 @@
                 <div class="flex flex-col flex-1 py-6 px-1">
                   <div>
                     <h3 class="font-medium text-0 mb-4">align-self</h3>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.self-auto</div>
                     </div>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.self-start</div>
                     </div>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.self-center</div>
                     </div>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.self-end</div>
                     </div>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.self-stretch</div>
                     </div>
                   </div>
                   <div class="mt-8">
                     <h3 class="font-medium text-0 mb-4">flex</h3>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.flex-initial</div>
                     </div>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.flex-1</div>
                     </div>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.flex-auto</div>
                     </div>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.flex-none</div>
                     </div>
                   </div>
                   <div class="mt-8">
                     <h3 class="font-medium text-0 mb-4">flex-grow</h3>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.flex-grow</div>
                     </div>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.flex-grow-0</div>
                     </div>
                   </div>
                   <div class="mt-8">
                     <h3 class="font-medium text-0 mb-4">flex-shrink</h3>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.flex-shrink</div>
                     </div>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.flex-shrink-0</div>
                     </div>
                   </div>
                   <div class="mt-8">
                     <h3 class="font-medium text-0 mb-4">flex-order</h3>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.order-first</div>
                     </div>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.order-last</div>
                     </div>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.order-none</div>
                     </div>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.order-{1-12}</div>
                     </div>
                   </div>
@@ -433,40 +431,40 @@
                 <div class="flex flex-col flex-1 py-6 px-1">
                   <div>
                     <h3 class="font-medium text-0 mb-4">width</h3>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.w-0</div>
                     </div>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.w-px</div>
                     </div>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.w-auto</div>
                     </div>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.w-{0-64}</div>
                     </div>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.w-1/2</div>
                     </div>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.w-{1-2}/3</div>
                     </div>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.w-{1-3}/4</div>
                     </div>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.w-{1-4}/5</div>
                     </div>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.w-{1-5}/6</div>
                     </div>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.w-{1-11}/12</div>
                     </div>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.w-full</div>
                     </div>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.w-screen</div>
                     </div>
                   </div>
@@ -475,34 +473,34 @@
                   <div>
                     <div>
                       <h3 class="font-medium text-0 mb-4">min-width</h3>
-                      <div class="text--1 font-mono">
+                      <div class="text--1 font-mono text-color-2">
                         <div class="lowercase">.min-w-0</div>
                       </div>
-                      <div class="text--1 font-mono">
+                      <div class="text--1 font-mono text-color-2">
                         <div class="lowercase">.min-w-full</div>
                       </div>
                     </div>
                     <div class="mt-8">
                       <h3 class="font-medium text-0 mb-4">max-width</h3>
-                      <div class="text--1 font-mono">
+                      <div class="text--1 font-mono text-color-2">
                         <div class="lowercase">.max-w-xs</div>
                       </div>
-                      <div class="text--1 font-mono">
+                      <div class="text--1 font-mono text-color-2">
                         <div class="lowercase">.max-w-sm</div>
                       </div>
-                      <div class="text--1 font-mono">
+                      <div class="text--1 font-mono text-color-2">
                         <div class="lowercase">.max-w-md</div>
                       </div>
-                      <div class="text--1 font-mono">
+                      <div class="text--1 font-mono text-color-2">
                         <div class="lowercase">.max-w-lg</div>
                       </div>
-                      <div class="text--1 font-mono">
+                      <div class="text--1 font-mono text-color-2">
                         <div class="lowercase">.max-w-xl</div>
                       </div>
-                      <div class="text--1 font-mono">
+                      <div class="text--1 font-mono text-color-2">
                         <div class="lowercase">.max-w-{2-6}xl</div>
                       </div>
-                      <div class="text--1 font-mono">
+                      <div class="text--1 font-mono text-color-2">
                         <div class="lowercase">.max-w-full</div>
                       </div>
                     </div>
@@ -511,43 +509,316 @@
                 <div class="flex flex-col flex-1 py-6 px-1">
                   <div>
                     <h3 class="font-medium text-0 mb-4">height</h3>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.h-{0-64}</div>
                     </div>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.h-px</div>
                     </div>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.h-auto</div>
                     </div>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.h-full</div>
                     </div>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.h-screen</div>
                     </div>
                   </div>
                   <div class="mt-8">
                     <h3 class="font-medium text-0 mb-4">min-height</h3>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.min-h-0</div>
                     </div>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.min-h-full</div>
                     </div>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.min-h-screen</div>
                     </div>
                   </div>
                   <div class="mt-8">
                     <h3 class="font-medium text-0 mb-4">max-height</h3>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.max-h-full</div>
                     </div>
-                    <div class="text--1 font-mono">
+                    <div class="text--1 font-mono text-color-2">
                       <div class="lowercase">.max-h-screen</div>
                     </div>
                   </div>
+                </div>
+              </div>
+            </section>
+
+            <section id="background" class="bg-foreground-1 block w-full p-6 rounded shadow-border-bottom mt-8">
+              <h2 class="font-medium text-3 my-4">Background</h2>
+              <p class="mb-4">Background colors have their own classes named for their suggested use.</p>
+              <div class="flex flex-row">
+                <div class="flex flex-col flex-1 py-6 px-1">
+                  <div>
+                    <h3 class="font-medium text-0 mb-4">bg-color</h3>
+                    <div class="text--1 font-mono text-color-2">
+                      <div class="lowercase">.bg-brand</div>
+                    </div>
+                    <div class="text--1 font-mono text-color-2">
+                      <div class="lowercase">.bg-brand-hover</div>
+                    </div>
+                    <div class="text--1 font-mono text-color-2">
+                      <div class="lowercase">.bg-brand-press</div>
+                    </div>
+                    <div class="text--1 font-mono text-color-2">
+                      <div class="lowercase">.bg-info</div>
+                    </div>
+                    <div class="text--1 font-mono text-color-2">
+                      <div class="lowercase">.bg-success</div>
+                    </div>
+                    <div class="text--1 font-mono text-color-2">
+                      <div class="lowercase">.bg-warning</div>
+                    </div>
+                    <div class="text--1 font-mono text-color-2">
+                      <div class="lowercase">.bg-danger</div>
+                    </div>
+                    <div class="text--1 font-mono text-color-2">
+                      <div class="lowercase">.bg-danger-hover</div>
+                    </div>
+                    <div class="text--1 font-mono text-color-2">
+                      <div class="lowercase">.bg-danger-press</div>
+                    </div>
+                    <div class="text--1 font-mono text-color-2">
+                      <div class="lowercase">.bg-background</div>
+                    </div>
+                    <div class="text--1 font-mono text-color-2">
+                      <div class="lowercase">.bg-foreground-1</div>
+                    </div>
+                    <div class="text--1 font-mono text-color-2">
+                      <div class="lowercase">.bg-foreground-2</div>
+                    </div>
+                    <div class="text--1 font-mono text-color-2">
+                      <div class="lowercase">.bg-foreground-3</div>
+                    </div>
+                    <div class="text--1 font-mono text-color-2">
+                      <div class="lowercase">.bg-transparent</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex flex-col flex-1 py-6 px-1">
+                  <div>
+                    <h3 class="font-medium text-0 mb-4">bg-attachment</h3>
+                    <div class="text--1 font-mono text-color-2">
+                      <div class="lowercase">.bg-fixed</div>
+                    </div>
+                    <div class="text--1 font-mono text-color-2">
+                      <div class="lowercase">.bg-local</div>
+                    </div>
+                    <div class="text--1 font-mono text-color-2">
+                      <div class="lowercase">.bg-scroll</div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h3 class="font-medium text-0 mb-4">bg-position</h3>
+                    <div class="text--1 font-mono text-color-2">
+                      <div class="lowercase">.bg-{left|right|top|bottom}</div>
+                    </div>
+                    <div class="text--1 font-mono text-color-2">
+                      <div class="lowercase">.bg-center</div>
+                    </div>
+                    <div class="text--1 font-mono text-color-2">
+                      <div class="lowercase">.bg-{left|right}-{top|bottom}</div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h3 class="font-medium text-0 mb-4">bg-repeat</h3>
+                    <div class="text--1 font-mono text-color-2">
+                      <div class="lowercase">.bg-repeat</div>
+                    </div>
+                    <div class="text--1 font-mono text-color-2">
+                      <div class="lowercase">.bg-norepeat</div>
+                    </div>
+                    <div class="text--1 font-mono text-color-2">
+                      <div class="lowercase">.bg-repeat-{x|y}</div>
+                    </div>
+                    <div class="text--1 font-mono text-color-2">
+                      <div class="lowercase">.bg-repeat-{round|space}</div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h3 class="font-medium text-0 mb-4">bg-size</h3>
+                    <div class="text--1 font-mono text-color-2">
+                      <div class="lowercase">.bg-auto</div>
+                    </div>
+                    <div class="text--1 font-mono text-color-2">
+                      <div class="lowercase">.bg-cover</div>
+                    </div>
+                    <div class="text--1 font-mono text-color-2">
+                      <div class="lowercase">.bg-contain</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section id="border" class="bg-foreground-1 block w-full p-6 rounded shadow-border-bottom mt-8">
+              <h2 class="font-medium text-3 my-4">Border</h2>
+              <p class="mb-4">Border colors are custom to Calcite, other border classes are inhertied from Tailwind's defaults.</p>
+                  <div class="mt-8">
+                    <h3 class="font-medium text-0 mb-4">border-color</h3>
+                    <div class="flow-root">
+                      <div class="w-1/2 float-left">
+                        <div class="mb-8 mr-8">
+                          <div class="p-4 border border-color-1 rounded font-mono text--1">.border-color-1</div>
+                        </div>
+                      </div>
+                      <div class="w-1/2 float-left">
+                        <div class="mb-8 mr-8">
+                          <div class="p-4 border border-color-2 rounded font-mono text--1">.border-color-2</div>
+                        </div>
+                      </div>
+                      <div class="w-1/2 float-left">
+                        <div class="mb-8 mr-8">
+                          <div class="p-4 border border-color-3 rounded font-mono text--1">.border-color-3</div>
+                        </div>
+                      </div>
+                      <div class="w-1/2 float-left">
+                        <div class="mb-8 mr-8">
+                          <div class="p-4 border border-color-input rounded font-mono text--1">.border-color-input</div>
+                        </div>
+                      </div>
+                      <div class="w-1/2 float-left">
+                        <div class="mb-8 mr-8">
+                          <div class="p-4 border border-color-brand rounded font-mono text--1">.border-color-brand</div>
+                        </div>
+                      </div>
+                      <div class="w-1/2 float-left">
+                        <div class="mb-8 mr-8">
+                          <div class="p-4 border border-color-brand-hover rounded font-mono text--1">.border-color-brand-hover</div>
+                        </div>
+                      </div>
+                      <div class="w-1/2 float-left">
+                        <div class="mb-8 mr-8">
+                          <div class="p-4 border border-color-brand-press rounded font-mono text--1">.border-color-brand-press</div>
+                        </div>
+                      </div>
+                      <div class="w-1/2 float-left">
+                        <div class="mb-8 mr-8">
+                          <div class="p-4 border border-color-info rounded font-mono text--1">.border-color-info</div>
+                        </div>
+                      </div>
+                      <div class="w-1/2 float-left">
+                        <div class="mb-8 mr-8">
+                          <div class="p-4 border border-color-success rounded font-mono text--1">.border-color-success</div>
+                        </div>
+                      </div>
+                      <div class="w-1/2 float-left">
+                        <div class="mb-8 mr-8">
+                          <div class="p-4 border border-color-warning rounded font-mono text--1">.border-color-warning</div>
+                        </div>
+                      </div>
+                      <div class="w-1/2 float-left">
+                        <div class="mb-8 mr-8">
+                          <div class="p-4 border border-color-danger rounded font-mono text--1">.border-color-danger</div>
+                        </div>
+                      </div>
+                      <div class="w-1/2 float-left">
+                        <div class="mb-8 mr-8">
+                          <div class="p-4 border border-color-danger-hover rounded font-mono text--1">.border-color-danger-hover</div>
+                        </div>
+                      </div>
+                      <div class="w-1/2 float-left">
+                        <div class="mb-8 mr-8">
+                          <div class="p-4 border border-color-danger-press rounded font-mono text--1">.border-color-danger-press</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex-row">
+                      <div class="flex flex-col flex-1 py-6 px-1">
+                        <div>
+                          <h3 class="font-medium text-0 mb-4">border-style</h3>
+                          <div class="text--1 font-mono text-color-2">
+                            <div class="lowercase">.border-solid</div>
+                          </div>
+                          <div class="text--1 font-mono text-color-2">
+                            <div class="lowercase">.border-dotted</div>
+                          </div>
+                          <div class="text--1 font-mono text-color-2">
+                            <div class="lowercase">.border-dashed</div>
+                          </div>
+                          <div class="text--1 font-mono text-color-2">
+                            <div class="lowercase">.border-double</div>
+                          </div>
+                          <div class="text--1 font-mono text-color-2">
+                            <div class="lowercase">.border-none</div>
+                          </div>
+                        </div>
+                        <div class="mt-8">
+                          <h3 class="font-medium text-0 mb-4">border-width</h3>
+                          <div class="text--1 font-mono text-color-2">
+                            <div class="lowercase">.border-0</div>
+                          </div>
+                          <div class="text--1 font-mono text-color-2">
+                            <div class="lowercase">.border</div>
+                          </div>
+                          <div class="text--1 font-mono text-color-2">
+                            <div class="lowercase">.border-{2/4/8}</div>
+                          </div>
+                          <div class="text--1 font-mono text-color-2">
+                            <div class="lowercase">.border-{t/r/b/l}</div>
+                          </div>
+                          <div class="text--1 font-mono text-color-2">
+                            <div class="lowercase">.border-{t/r/b/l}-0</div>
+                          </div>
+                          <div class="text--1 font-mono text-color-2">
+                            <div class="lowercase">.border-{t/r/b/l}-{2/4/8}</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex flex-col flex-1 py-6 px-1">
+                        <div>
+                          <h3 class="font-medium text-0 mb-4">border-radius</h3>
+                          <div class="text--1 font-mono text-color-2">
+                            <div class="lowercase">.rounded</div>
+                          </div>
+                          <div class="text--1 font-mono text-color-2">
+                            <div class="lowercase">.rounded-none</div>
+                          </div>
+                          <div class="text--1 font-mono text-color-2">
+                            <div class="lowercase">.rounded-sm</div>
+                          </div>
+                          <div class="text--1 font-mono text-color-2">
+                            <div class="lowercase">.rounded-md</div>
+                          </div>
+                          <div class="text--1 font-mono text-color-2">
+                            <div class="lowercase">.rounded-lg</div>
+                          </div>
+                          <div class="text--1 font-mono text-color-2">
+                            <div class="lowercase">.rounded-xl</div>
+                          </div>
+                          <div class="text--1 font-mono text-color-2">
+                            <div class="lowercase">.rounded-2xl</div>
+                          </div>
+                          <div class="text--1 font-mono text-color-2">
+                            <div class="lowercase">.rounded-3xl</div>
+                          </div>
+                          <div class="text--1 font-mono text-color-2">
+                            <div class="lowercase">.rounded-full</div>
+                          </div>
+                          <div class="text--1 font-mono text-color-2">
+                            <div class="lowercase">.rounded-half</div>
+                          </div>
+                          <div class="text--1 font-mono text-color-2">
+                            <div class="lowercase">.rounded-{t/r/b/l}</div>
+                          </div>
+                          <div class="text--1 font-mono text-color-2">
+                            <div class="lowercase">.rounded-{t/r/b/l}-{size}</div>
+                          </div>
+                          <div class="text--1 font-mono text-color-2">
+                            <div class="lowercase">.rounded-{t/r/b/l}-{lg/full}</div>
+                          </div>
+                          <div class="text--1 font-mono text-color-2">
+                            <div class="lowercase">.rounded-{tr/tl/br/bl}</div>
+                          </div>
+                          <div class="text--1 font-mono text-color-2">
+                            <div class="lowercase">.rounded-{tr/tl/br/bl}-{size}</div>
+                          </div>
+                        </div>
                 </div>
               </div>
             </section>
