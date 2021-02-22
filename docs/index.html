@@ -19,7 +19,7 @@
       <div class="container mx-auto">
         <div class="flex py-12">
           <aside class="flex-0 mr-24" aria-role="complementary">
-            <calcite-tree>
+            <calcite-tree class=" sticky top-0 pt-8">
               <calcite-tree-item>
                 <a href="#overview">Overview</a>
               </calcite-tree-item>
@@ -64,7 +64,7 @@
               </calcite-tree-item>
             </calcite-tree>
           </aside>
-          <main class="flex-1">
+          <main class="flex-1 pb-24">
             <section id="overview" class="bg-foreground-1 block w-full p-6 rounded shadow-border-bottom">
               <h2 class="font-medium text-3 my-4">Overview</h2>
               <p class="mb-4">For the most part, Calcite leverages the built in classes supplied by Tailwind. For more information about tailwind classes, see <calcite-link href="https://tailwindcss.com/docs">the tailwind documentation</calcite-link>. This guide is intended to be a "cheat sheet" for quickly viewing what's available.</p>
@@ -273,7 +273,7 @@
               <div class="flex flex-row">
                 <div class="flex flex-col flex-1 py-6 px-1">
                   <h3 class="text-2 font-medium mb-4">Sizes</h3>
-                  <h4 class="mt-8 font-mono text--1 text-color-2">.text--3</h4>
+                  <h4 class="font-mono text--1 text-color-2">.text--3</h4>
                   <p class="font-medium text--3">Hamburgevons</p>
                   <h4 class="mt-8 font-mono text--1 text-color-2">.text--2</h4>
                   <p class="font-medium text--2">Hamburgevons</p>
@@ -1265,8 +1265,264 @@
                 </div>
               </div>
             </section>
+            <section id="margin" class="bg-foreground-1 block w-full p-6 rounded shadow-border-bottom mt-8">
+              <h2 class="font-medium text-3 my-4">Margin and Padding</h2>
+              <p class="mb-4">Margin and padding can be applied to any cardinal direction in any value on the spacing scale. These classes come directly from the Tailwind defaults.</p>
+              <div class="flex flex-row">
+                <div class="flex flex-col flex-1 py-6 px-1">
+                  <div>
+                    <h3 class="font-medium text-0 mb-4">padding</h3>
+                    <div class="text--1 font-mono text-color-2">
+                      <div class="lowercase">.p-px</div>
+                    </div>
+                    <div class="text--1 font-mono text-color-2">
+                      <div class="lowercase">.p-{0-64}</div>
+                    </div>
+                    <div class="text--1 font-mono text-color-2">
+                      <div class="lowercase">.p{x/y}-px</div>
+                    </div>
+                    <div class="text--1 font-mono text-color-2">
+                      <div class="lowercase">.p{x/y}-{0-64}</div>
+                    </div>
+                    <div class="text--1 font-mono text-color-2">
+                      <div class="lowercase">.p{t/r/b/l}-px</div>
+                    </div>
+                    <div class="text--1 font-mono text-color-2">
+                      <div class="lowercase">.p{t/r/b/l}-{0-64}</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex flex-col flex-1 py-6 px-1">
+                  <div>
+                    <h3 class="font-medium text-0 mb-4">margin</h3>
+                    <div class="text--1 font-mono text-color-2">
+                      <div class="lowercase">.{-}m-px</div>
+                    </div>
+                    <div class="text--1 font-mono text-color-2">
+                      <div class="lowercase">.m-auto</div>
+                    </div>
+                    <div class="text--1 font-mono text-color-2">
+                      <div class="lowercase">.{-}m-{0-64}</div>
+                    </div>
+                    <div class="text--1 font-mono text-color-2">
+                      <div class="lowercase">.{-}m{x/y}-px</div>
+                    </div>
+                    <div class="text--1 font-mono text-color-2">
+                      <div class="lowercase">.{-}m{x/y}-{0-64}</div>
+                    </div>
+                    <div class="text--1 font-mono text-color-2">
+                      <div class="lowercase">.{-}m{t/r/b/l}-px</div>
+                    </div>
+                    <div class="text--1 font-mono text-color-2">
+                      <div class="lowercase">.{-}m{t/r/b/l}-{0-64}</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section id="effect" class="bg-foreground-1 block w-full p-6 rounded shadow-border-bottom mt-8">
+              <h2 class="font-medium text-3 my-4">Effect</h2>
+              <p class="mb-4">Shadows are custom to Calcite values. Generally, shadows will grow on hover (<span class="font-mono">lg</span>) and lessen during click/active (<span class="font-mono">sm</span>).</p>
+              <div class="flex flex-row">
+                <div class="flex flex-col flex-none py-6 px-1">
+                  <h3 class="font-medium text-0 mb-4">Opacity</h3>
+                  <div class="mb-8 mr-12 flex">
+                    <div class="shadow text--1 font-mono inline-block mr-8">
+                      <div class="block w-8 h-8 opacity-0 bg-brand"></div>
+                    </div>
+                    <div class="flex items-center">.opacity-0</div>
+                  </div>
+                  <div class="mb-8 mr-12 flex">
+                    <div class="shadow text--1 font-mono inline-block mr-8">
+                      <div class="block w-8 h-8 opacity-25 bg-brand"></div>
+                    </div>
+                    <div class="flex items-center">.opacity-25</div>
+                  </div>
+                  <div class="mb-8 mr-12 flex">
+                    <div class="shadow text--1 font-mono inline-block mr-8">
+                      <div class="block w-8 h-8 opacity-50 bg-brand"></div>
+                    </div>
+                    <div class="flex items-center">.opacity-50</div>
+                  </div>
+                  <div class="mb-8 mr-12 flex">
+                    <div class="shadow text--1 font-mono inline-block mr-8">
+                      <div class="block w-8 h-8 opacity-75 bg-brand"></div>
+                    </div>
+                    <div class="flex items-center">.opacity-75</div>
+                  </div>
+                  <div class="mb-8 mr-12 flex">
+                    <div class="shadow text--1 font-mono inline-block mr-8">
+                      <div class="block w-8 h-8 opacity-100 bg-brand"></div>
+                    </div>
+                    <div class="flex items-center">.opacity-100</div>
+                  </div>
+                </div>
+                <div class="flex flex-col flex-1 py-6 px-1">
+                  <h3 class="font-medium text-0 mb-4">Shadow</h3>
+                  <div class="flow-root">
+                    <div class="w-1/3 float-left">
+                      <div class="mb-8 mr-8 rounded p-2 text--1 font-mono shadow-1">.shadow/.shadow-1</div>
+                    </div>
+                    <div class="w-1/3 float-left">
+                      <div class="mb-8 mr-8 rounded p-2 text--1 font-mono shadow-1-lg">.shadow-1-lg</div>
+                    </div>
+                    <div class="w-1/3 float-left">
+                      <div class="mb-8 mr-8 rounded p-2 text--1 font-mono shadow-1-sm">.shadow-1-sm</div>
+                    </div>
+                    <div class="w-1/3 float-left">
+                      <div class="mb-8 mr-8 rounded p-2 text--1 font-mono shadow-2">.shadow-2</div>
+                    </div>
+                    <div class="w-1/3 float-left">
+                      <div class="mb-8 mr-8 rounded p-2 text--1 font-mono shadow-2-lg">.shadow-2-lg</div>
+                    </div>
+                    <div class="w-1/3 float-left">
+                      <div class="mb-8 mr-8 rounded p-2 text--1 font-mono shadow-2-sm">.shadow-2-sm</div>
+                    </div>
+                    <div class="w-1/3 float-left">
+                      <div class="mb-8 mr-8 rounded p-2 text--1 font-mono shadow-border-bottom">.shadow-border-bottom</div>
+                    </div>
+                    <div class="w-1/3 float-left">
+                      <div class="mb-8 mr-8 rounded p-2 text--1 font-mono shadow-outline-active">.shadow-outline-active</div>
+                    </div>
+                    <div class="w-1/3 float-left">
+                      <div class="mb-8 mr-8 rounded p-2 text--1 font-mono shadow-none">.shadow-none</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section id="table" class="bg-foreground-1 block w-full p-6 rounded shadow-border-bottom mt-8">
+              <h2 class="font-medium text-3 my-4">Table</h2>
+              <div class="flex flex-row">
+                <div class="flex flex-col flex-1 py-6 px-1">
+                  <div>
+                    <h3 class="font-medium text-0 mb-4">collapse</h3>
+                    <div class="text--1 font-mono text-color-2">
+                      <div class="lowercase">.border-collapse</div>
+                    </div>
+                    <div class="text--1 font-mono text-color-2">
+                      <div class="lowercase">.border-separate</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex flex-col flex-1 py-6 px-1">
+                  <div>
+                    <h3 class="font-medium text-0 mb-4">Layout</h3>
+                    <div class="text--1 font-mono text-color-2">
+                      <div class="lowercase">.table-auto</div>
+                    </div>
+                    <div class="text--1 font-mono text-color-2">
+                      <div class="lowercase">.table-fixed</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section id="interactivity" class="bg-foreground-1 block w-full p-6 rounded shadow-border-bottom mt-8">
+              <h2 class="font-medium text-3 my-4">Interactivity</h2>
+              <div class="flex flex-row">
+                <div class="flex flex-col flex-1 py-6 px-1">
+                  <div>
+                    <h3 class="font-medium text-0 mb-4">cursor</h3>
+                    <div class="text--1-font-mono text-color-2">
+                      <div class="lowercase">.cursor-auto</div>
+                    </div>
+                    <div class="text--1-font-mono text-color-2">
+                      <div class="lowercase">.cursor-default</div>
+                    </div>
+                    <div class="text--1-font-mono text-color-2">
+                      <div class="lowercase">.cursor-pointer</div>
+                    </div>
+                    <div class="text--1-font-mono text-color-2">
+                      <div class="lowercase">.cursor-wait</div>
+                    </div>
+                    <div class="text--1-font-mono text-color-2">
+                      <div class="lowercase">.cursor-text</div>
+                    </div>
+                    <div class="text--1-font-mono text-color-2">
+                      <div class="lowercase">.cursor-move</div>
+                    </div>
+                    <div class="text--1-font-mono text-color-2">
+                      <div class="lowercase">.cursor-not-allowed</div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h3 class="font-medium text-0 mb-4">user-select</h3>
+                      <div class="text--1-font-mono text-color-2">
+                        <div class="lowercase">.select-none</div>
+                      </div>
+                      <div class="text--1-font-mono text-color-2">
+                        <div class="lowercase">.select-text</div>
+                      </div>
+                      <div class="text--1-font-mono text-color-2">
+                        <div class="lowercase">.select-all</div>
+                      </div>
+                      <div class="text--1-font-mono text-color-2">
+                        <div class="lowercase">.select-auto</div>
+                      </div>
+                    </div>
+                </div>
+                <div class="flex flex-col flex-1 py-6 px-1">
+                  <div>
+                    <h3 class="font-medium text-0 mb-4">resize</h3>
+                    <div class="text--1-font-mono text-color-2">
+                      <div class="lowercase">.resize</div>
+                    </div>
+                    <div class="text--1-font-mono text-color-2">
+                      <div class="lowercase">.resize-{x/y}</div>
+                    </div>
+                    <div class="text--1-font-mono text-color-2">
+                      <div class="lowercase">.resize-none</div>
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <h3 class="font-medium text-0 mb-4">pointer-events</h3>
+                    <div class="text--1-font-mono text-color-2">
+                      <div class="lowercase">.pointer-events-auto</div>
+                    </div>
+                    <div class="text--1-font-mono text-color-2">
+                      <div class="lowercase">.pointer-events-none</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex flex-col flex-1 py-6 px-1">
+                  <div>
+                    <div>
+                      <h3 class="font-medium text-0 mb-4">outline</h3>
+                      <div class="text--1-font-mono text-color-2">
+                        <div class="lowercase">.outline-none</div>
+                      </div>
+                    </div>
+                    <div class="mt-8">
+                      <h3 class="font-medium text-0 mb-4">appearance</h3>
+                      <div class="text--1-font-mono text-color-2">
+                        <div class="lowercase">.appearance-none</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section id="svg" class="bg-foreground-1 block w-full p-6 rounded shadow-border-bottom mt-8">
+              <h2 class="font-medium text-3 my-4">SVG</h2>
+              <div class="flex flex-row">
+                <div class="flex flex-col flex-1 py-6 px-1">
+                  <h3 class="font-medium text-0 mb-4">fill</h3>
+                  <div class="text--1-font-mono text-color-2">
+                    <div class="lowercase">.fill-current</div>
+                  </div>
+                </div>
+                <div class="flex flex-col flex-1 py-6 px-1">
+                  <h3 class="font-medium text-0 mb-4">stroke</h3>
+                  <div class="text--1-font-mono text-color-2">
+                    <div class="lowercase">.stroke-current</div>
+                  </div>
+                </div>
+              </div>
+            </section>
           </main>
         </div>
       </div>
     </div>
   </body>
+</html>
