@@ -1,13 +1,6 @@
 # Calcite Base
 
-The calcite-base repository holds the variables and mixins used in Calcite Web. This includes resources regarding:
-
-- motion (easing functions, transitions)
-- type (font stacks, sizing, spacing mixins)
-- reponsive design (breakpoints, respond-to mixins)
-- utilities (clearfix, show/hide, etc)
-- shadow (defined levels of depth)
-- spacing (standardized vertical/horizontal spacing units)
+The calcite-base repository holds the tailwind configuration used to build calcite-components.
 
 ## Install
 
@@ -17,56 +10,25 @@ If you use npm, installation is as easy as:
 npm install @esri/calcite-base
 ```
 
-You can also [download the latest release manually](https://github.com/Esri/calcite-colors/releases).
+You can also [download the latest release manually](https://github.com/Esri/calcite-base/releases).
 
-## Use
+_Note_: this project assumes you have the light and dark theme variables defined on your page. If you're using calcite components, these will already be defined for you. If not, please see [calcite-colors](https://github.com/Esri/calcite-colors/) for steps on how to import the theme.
+### PostCSS/Tailwind
 
-In a Sass project, simply import calcite-base into your project and use the variables/mixins:
-
-```scss
-@import "./node_modules/@esri/calcite-base/dist/_index.scss";
-
-.myClass {
-  @include font-size(-1);
-}
-```
-
-If you only require certain mixins, you can import each section directly as well:
-
-```scss
-@import "./node_modules/@esri/calcite-base/dist/_type.scss";
-
-.myClass {
-  @include avenir-light();
-  @include font-size(-1);
-  @include leading(2);
-  @include tracking(166);
-  @include word-spacing(200);
-}
-```
-
-### Custom Properties
-
-If you are using PostCSS (or standard CSS) there are a series of files which declare the variables utilizing [custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) (CSS Variables). You can use these along with something like the [postcss-custom-properties](https://github.com/postcss/postcss-custom-properties) library to utilize the base colors, styles, etc in your postcss project:
-
-```css
-@import "./node_modules/@esri/calcite-base/dist/variables.css";
-
-.myClass {
-  box-shadow: var(--shadow-1);
-}
-```
-
-### JavaScript
-
-If you need some of these values and are using a CSS-in-JS approach, you can import them from the JavaScript file using ES6 modules:
+To add Calcite's Tailwind configuration to your project you can simply import it in your `tailwind.config.js` file:
 
 ```js
-import {avenirLight} from "@esri/calcite-base";
-console.log(avenirLight); // '"Avenir Next", "Avenir", "Helvetica Neue", sans-serif'
+var calciteTheme = require("@esri/calcite-base/tailwind.config");
+
+module.exports = {
+  purge: ["./public/**/*.html"],
+  ...calciteTheme
+};
 ```
 
-Note when using partial imports like this, the hyphenated variables become camel case.
+### CSS
+
+A static CSS file is also provided at `dist/tailwind.css`. When using this option it's a good idea to use nano or another CSS optimization tool to remove the unused classes as the default build can be quite large.
 
 ## Licensing
 
