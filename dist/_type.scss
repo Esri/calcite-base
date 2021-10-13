@@ -145,7 +145,7 @@
   $value: $v1;
 
   @while $v2 > $v1 {
-    $v2: ($v2 / $targetRatio); // will be off-by-1
+    $v2: math.div($v2, $targetRatio); // will be off-by-1
   }
   @while $v2 < $v1 {
     $v2: ($v2 * $targetRatio); // will fix off-by-1
@@ -166,7 +166,7 @@
   }
 
   @if $increment < 0 {
-    $unit: $body-size/16;
+    $unit: math.div($body-size, 16);
     $decriment: $increment * $unit;
     $value: $body-size + $decriment;
   }

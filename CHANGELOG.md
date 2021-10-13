@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 - updated a few shadow variables that seemed to have inconsistent names / values
+- use the Sass migrator to automatically update your stylesheets to use math.div() and list.slash()
 
 ## 1.2.0
 
